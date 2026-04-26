@@ -8,25 +8,29 @@ final class CatalogStore {
     let fertilizers: [Fertilizer]
     let achievements: [Achievement]
     let challenges: [Challenge]
+    let tips: [Tip]
 
     private let cropById: [String: Crop]
     private let toolById: [String: Tool]
     private let fertById: [String: Fertilizer]
     private let achievementById: [String: Achievement]
     private let challengeById: [String: Challenge]
+    private let tipById: [String: Tip]
 
     init(crops: [Crop], tools: [Tool], fertilizers: [Fertilizer],
-         achievements: [Achievement], challenges: [Challenge]) {
+         achievements: [Achievement], challenges: [Challenge], tips: [Tip]) {
         self.crops = crops
         self.tools = tools
         self.fertilizers = fertilizers
         self.achievements = achievements
         self.challenges = challenges
+        self.tips = tips
         self.cropById = Dictionary(uniqueKeysWithValues: crops.map { ($0.id, $0) })
         self.toolById = Dictionary(uniqueKeysWithValues: tools.map { ($0.id, $0) })
         self.fertById = Dictionary(uniqueKeysWithValues: fertilizers.map { ($0.id, $0) })
         self.achievementById = Dictionary(uniqueKeysWithValues: achievements.map { ($0.id, $0) })
         self.challengeById = Dictionary(uniqueKeysWithValues: challenges.map { ($0.id, $0) })
+        self.tipById = Dictionary(uniqueKeysWithValues: tips.map { ($0.id, $0) })
     }
 
     static func load(bundle: Bundle = .main) -> CatalogStore {
@@ -35,8 +39,9 @@ final class CatalogStore {
         let fertilizers: [Fertilizer] = decodeBundled("fertilizers", bundle: bundle)
         let achievements: [Achievement] = decodeBundled("achievements", bundle: bundle)
         let challenges: [Challenge] = decodeBundled("challenges", bundle: bundle)
+        let tips: [Tip] = decodeBundled("tips", bundle: bundle)
         return CatalogStore(crops: crops, tools: tools, fertilizers: fertilizers,
-                            achievements: achievements, challenges: challenges)
+                            achievements: achievements, challenges: challenges, tips: tips)
     }
 
     func crop(id: String) -> Crop? { cropById[id] }
@@ -44,6 +49,7 @@ final class CatalogStore {
     func fertilizer(id: String) -> Fertilizer? { fertById[id] }
     func achievement(id: String) -> Achievement? { achievementById[id] }
     func challenge(id: String) -> Challenge? { challengeById[id] }
+    func tip(id: String) -> Tip? { tipById[id] }
 
     struct CropFilters {
         var region: Region?

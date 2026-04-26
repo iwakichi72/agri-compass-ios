@@ -12,6 +12,7 @@ final class ActiveCropEntity {
     var nickname: String?
     var statusRaw: String
     var harvestedAt: Date?
+    var lastWateredAt: Date?
 
     init(instanceId: String = UUID().uuidString,
          cropId: String,
@@ -21,7 +22,8 @@ final class ActiveCropEntity {
          completedStepIds: [String] = [],
          nickname: String? = nil,
          status: CropStatus = .growing,
-         harvestedAt: Date? = nil) {
+         harvestedAt: Date? = nil,
+         lastWateredAt: Date? = nil) {
         self.instanceId = instanceId
         self.cropId = cropId
         self.plantedAt = plantedAt
@@ -31,6 +33,7 @@ final class ActiveCropEntity {
         self.nickname = nickname
         self.statusRaw = status.rawValue
         self.harvestedAt = harvestedAt
+        self.lastWateredAt = lastWateredAt
     }
 
     var status: CropStatus {

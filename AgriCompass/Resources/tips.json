@@ -1,0 +1,249 @@
+[
+  {
+    "id": "tip-water-morning",
+    "category": "watering",
+    "title": "水やりは朝のうちに",
+    "body": "気温が上がる前の朝に水をあげると、根が水を吸い上げやすく、夕方までに葉も乾いて病気を防げます。",
+    "seasons": ["spring", "summer"]
+  },
+  {
+    "id": "tip-water-finger",
+    "category": "watering",
+    "title": "土を指で確かめる",
+    "body": "毎日あげる必要はありません。指を第一関節まで土に挿し、湿っていればその日はお休みでOKです。"
+  },
+  {
+    "id": "tip-water-pot-bottom",
+    "category": "watering",
+    "title": "鉢底から流れるまで",
+    "body": "鉢植えはたっぷり一度に。鉢底の穴から水が流れ出るまであげると、土の中の古い空気が押し出されて根が元気になります。"
+  },
+  {
+    "id": "tip-water-evening-summer",
+    "category": "watering",
+    "title": "夏は朝・夕の二回もOK",
+    "body": "真夏で土がカラカラの日は、朝にたっぷり、日が傾いた夕方にもう一度軽くあげるとしおれにくくなります。",
+    "seasons": ["summer"]
+  },
+  {
+    "id": "tip-water-rain-skip",
+    "category": "watering",
+    "title": "雨の日は水やりお休み",
+    "body": "1日の雨量が5mm以上なら、その日とおおむね翌日も水やりは不要。あげすぎると根が酸欠になります。"
+  },
+  {
+    "id": "tip-soil-ph",
+    "category": "soil",
+    "title": "酸度はpH6前後が目安",
+    "body": "野菜の多くは弱酸性〜中性が好み。新しい土を使う、または苦土石灰を植え付けの2週間前にまくと整えやすいです。"
+  },
+  {
+    "id": "tip-soil-mulching",
+    "category": "soil",
+    "title": "敷きわらで土を守る",
+    "body": "株元に敷きわらやバークチップを敷くと、土の乾燥・泥はね・雑草・地温上昇をまとめて抑えられます。"
+  },
+  {
+    "id": "tip-soil-rotation",
+    "category": "soil",
+    "title": "同じ仲間は続けて植えない",
+    "body": "ナス科のあとにナス科、アブラナ科のあとにアブラナ科は連作障害が出やすいです。1〜3年間隔をあけましょう。"
+  },
+  {
+    "id": "tip-soil-reuse",
+    "category": "soil",
+    "title": "古い土も再生できる",
+    "body": "ふるいでゴミと根を取り除き、黒いビニールに入れて夏の天日で1週間消毒。再生材を混ぜれば翌シーズンも使えます."
+  },
+  {
+    "id": "tip-disaster-typhoon",
+    "category": "disaster",
+    "title": "台風の前にやること3つ",
+    "body": "①支柱と誘引ひもを増し締め ②鉢は壁際に避難 ③大きく実った果実は早めに収穫。風で揺すられても折れにくくなります。",
+    "seasons": ["summer", "autumn"]
+  },
+  {
+    "id": "tip-disaster-frost-cover",
+    "category": "disaster",
+    "title": "霜の夜は不織布で一枚羽織る",
+    "body": "夕方に不織布や段ボールでふわっと覆うだけで、葉の温度低下を2〜3℃緩めることができます。",
+    "seasons": ["autumn", "winter"]
+  },
+  {
+    "id": "tip-disaster-heatwave",
+    "category": "disaster",
+    "title": "猛暑日は遮光ネットで日陰を",
+    "body": "30%遮光のネットを南側にかけるだけで、葉焼け・水切れ・しおれが大きく減ります。設置は朝のうちに。",
+    "seasons": ["summer"]
+  },
+  {
+    "id": "tip-disaster-rain-drainage",
+    "category": "disaster",
+    "title": "畝の脇に溝を切って排水",
+    "body": "大雨前に畝の周りに5cmほどの溝を切るだけで、根腐れリスクが大幅に下がります。"
+  },
+  {
+    "id": "tip-disaster-wind-stake",
+    "category": "disaster",
+    "title": "支柱は深く刺すほど効く",
+    "body": "支柱は地中30cm以上が理想。短いものは強風で抜けてしまうので、長めを選んで深く差し込みましょう。"
+  },
+  {
+    "id": "tip-disaster-snow",
+    "category": "disaster",
+    "title": "雪の前に風通しを確保",
+    "body": "雪が積もる前に下葉を整理して風通しよく。湿気が抜けにくい冬は病気の原因にもなります。",
+    "seasons": ["winter"]
+  },
+  {
+    "id": "tip-harvest-morning",
+    "category": "harvest",
+    "title": "収穫も朝のうちが甘い",
+    "body": "夜の間に養分が実にたまり、朝が一番おいしいタイミング。気温が上がる前に収穫すると日持ちもします。"
+  },
+  {
+    "id": "tip-harvest-leafy",
+    "category": "harvest",
+    "title": "葉物は外側からかいて長く",
+    "body": "外側の大きな葉から1枚ずつかき取れば、中心の若い葉が育ち続け、何度も収穫できます。"
+  },
+  {
+    "id": "tip-harvest-tomato-color",
+    "category": "harvest",
+    "title": "ミニトマトは赤くなった順に",
+    "body": "色づいた実から順に摘めば、後の実に栄養が回って房全体がそろって育ちます。",
+    "cropTags": ["mini-tomato"]
+  },
+  {
+    "id": "tip-harvest-radish-shoulder",
+    "category": "harvest",
+    "title": "ラディッシュは肩で見極め",
+    "body": "土の上に出ている肩の部分が500円玉くらいになったら採りごろ。遅れるとスが入って固くなります。",
+    "cropTags": ["radish"]
+  },
+  {
+    "id": "tip-harvest-eggplant-young",
+    "category": "harvest",
+    "title": "ナスは少し早めが正解",
+    "body": "完熟まで待つより、若どりの方が皮がやわらかくおいしいです。次の実への栄養も回ります。"
+  },
+  {
+    "id": "tip-beginner-one-pot",
+    "category": "beginner",
+    "title": "最初は1鉢から",
+    "body": "あれこれ手を広げず、まずは1鉢を観察しきること。失敗も成功もここから学べます。"
+  },
+  {
+    "id": "tip-beginner-photo",
+    "category": "beginner",
+    "title": "毎週1枚写真を撮る",
+    "body": "成長の比較ができ、変化や異常にも気づきやすくなります。記録は続ける一番のコツです。"
+  },
+  {
+    "id": "tip-beginner-label",
+    "category": "beginner",
+    "title": "ラベルに日付を書く",
+    "body": "植えた日付を書いたラベルを挿しておくと「いつ収穫できる?」がすぐわかります。"
+  },
+  {
+    "id": "tip-beginner-overcare",
+    "category": "beginner",
+    "title": "心配しすぎないことも大事",
+    "body": "水のやりすぎ・肥料のあげすぎが初心者の失敗の半分以上。少し物足りないくらいがちょうどいいです。"
+  },
+  {
+    "id": "tip-beginner-why-read",
+    "category": "beginner",
+    "title": "「なぜ」を読むと迷わない",
+    "body": "各ステップの「なぜ」を読んでおくと、迷ったときに自分で判断できるようになります。"
+  },
+  {
+    "id": "tip-season-spring-prep",
+    "category": "season",
+    "title": "春は土づくりから始める",
+    "body": "苗を植える2週間前に堆肥と元肥を入れて土を寝かせると、根の張りが見違えます。",
+    "seasons": ["spring"]
+  },
+  {
+    "id": "tip-season-summer-mulch",
+    "category": "season",
+    "title": "夏は乾燥対策が最優先",
+    "body": "敷きわら・腐葉土・黒マルチで土の温度上昇と乾燥を抑えましょう。",
+    "seasons": ["summer"]
+  },
+  {
+    "id": "tip-season-autumn-warmth",
+    "category": "season",
+    "title": "秋まきは初期の保温で差がつく",
+    "body": "発芽までは不織布や行灯仕立てで保温すると、ぐっと生育が早まります。",
+    "seasons": ["autumn"]
+  },
+  {
+    "id": "tip-season-winter-watering",
+    "category": "season",
+    "title": "冬の水やりは午前中に少量",
+    "body": "夕方の水やりは凍結のもと。気温が上がりはじめる午前に、土がうっすら湿る程度であげましょう。",
+    "seasons": ["winter"]
+  },
+  {
+    "id": "tip-pest-aphid-water",
+    "category": "pest",
+    "title": "アブラムシは水で吹き飛ばせる",
+    "body": "見つけたら強めの水で流すだけで数を減らせます。早めの対処が一番効きます。"
+  },
+  {
+    "id": "tip-pest-companion",
+    "category": "pest",
+    "title": "コンパニオンプランツを活用",
+    "body": "ナスのそばにバジル、トマトのそばにマリーゴールド。香りで虫を遠ざけてくれます。"
+  },
+  {
+    "id": "tip-pest-morning-check",
+    "category": "pest",
+    "title": "朝の見回りで虫は見つかる",
+    "body": "夜行性の虫は朝にじっとしていることが多く、葉裏を確認すると気づきやすいです。"
+  },
+  {
+    "id": "tip-pest-yellow-leaf",
+    "category": "pest",
+    "title": "黄色い葉はサインかも",
+    "body": "下葉の黄変は水・肥料・日照のいずれかのサイン。1つずつ条件を見直してみましょう。"
+  },
+  {
+    "id": "tip-water-leaf-not-wet",
+    "category": "watering",
+    "title": "水は葉ではなく株元に",
+    "body": "葉に水をかけ続けると蒸れて病気の原因になります。株元の土へ静かに注ぐのがコツです。"
+  },
+  {
+    "id": "tip-soil-deep-dig",
+    "category": "soil",
+    "title": "植え付け前に深く耕す",
+    "body": "30cmほど深く耕して空気を入れると、根が伸び伸びと育ち水はけもよくなります。"
+  },
+  {
+    "id": "tip-harvest-zucchini-young",
+    "category": "harvest",
+    "title": "ズッキーニは20cmで収穫",
+    "body": "大きく育てるより20cm前後で採るほうが食感がよく、株への負担も減って収穫が長続きします."
+  },
+  {
+    "id": "tip-beginner-failed-ok",
+    "category": "beginner",
+    "title": "枯らしても大丈夫",
+    "body": "枯らした経験ほど次に活きます。なぜ枯れたかを1つ言えれば、それは立派な進歩です。"
+  },
+  {
+    "id": "tip-season-monsoon-air",
+    "category": "season",
+    "title": "梅雨は風通しがいちばんの薬",
+    "body": "下葉の整理と株間の確保で病気がぐっと減ります。雨後は晴れ間に葉を観察しましょう。",
+    "seasons": ["summer"]
+  },
+  {
+    "id": "tip-disaster-pot-indoor",
+    "category": "disaster",
+    "title": "強い天気の日は鉢を屋内へ",
+    "body": "台風・大雪・猛暑のいずれも、移動できる鉢は思いきって屋内・玄関先に避難させるのが一番安全です."
+  }
+]

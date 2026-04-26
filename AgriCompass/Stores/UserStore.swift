@@ -120,6 +120,12 @@ final class UserStore {
         return record
     }
 
+    func recordWatering(instanceId: String, at date: Date = Date()) {
+        guard let ac = activeCrops.first(where: { $0.instanceId == instanceId }) else { return }
+        ac.lastWateredAt = date
+        save()
+    }
+
     func abandonCrop(instanceId: String) {
         guard let ac = activeCrops.first(where: { $0.instanceId == instanceId }) else { return }
         ac.status = .abandoned

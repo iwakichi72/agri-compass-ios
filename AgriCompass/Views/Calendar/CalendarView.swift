@@ -122,17 +122,41 @@ struct CalendarView: View {
     private func dayCard(day: Date, tasks: [TodayTask]) -> some View {
         CardContainer(padding: 12) {
             VStack(alignment: .leading, spacing: 8) {
-                HStack {
+                HStack(spacing: 8) {
                     Text("\(DateUtils.formatMD(day)) (\(DateUtils.formatWeekday(day)))")
                         .font(.system(size: 13, weight: .bold))
                         .foregroundStyle(Color.appInk)
                     Spacer()
+                    weatherChip(for: day)
                     if DateUtils.isSameDay(day, Date()) {
                         Chip(text: "今日", variant: .leaf)
                     }
                 }
                 taskList(tasks)
             }
+        }
+    }
+
+    @ViewBuilder
+    private func weatherChip(for day: Date) -> some View {
+        if let region = userStore.profile.selectedRegion {
+            let w = WeatherService.mockDay(region: region, date: day)
+            HStack(spacing: 4) {
+                Text(w.condition.icon).font(.system(size: 14))
+                Text("\(w.tempMax)°/\(w.tempMin)°")
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundStyle(Color.appInk)
+                if w.precipitationMm >= 5 {
+                    Text("\(w.precipitationMm)mm")
+                        .font(.system(size: 10, weight: .semibold))
+                        .foregroundStyle(Color.appEarth)
+                }
+            }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .background(Color.appCanvas, in: Capsule())
+            .overlay(Capsule().strokeBorder(Color.appLine, lineWidth: 1))
+            .accessibilityLabel("\(DateUtils.formatMD(day))の天気 \(w.condition.icon) 最高\(w.tempMax)度 最低\(w.tempMin)度")
         }
     }
 

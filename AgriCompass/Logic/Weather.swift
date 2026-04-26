@@ -19,6 +19,21 @@ struct WeatherDay: Hashable {
     let tempMax: Int
     let condition: WeatherCondition
     let precipitationMm: Int
+    let windMps: Int
+
+    init(date: Date,
+         tempMin: Int,
+         tempMax: Int,
+         condition: WeatherCondition,
+         precipitationMm: Int,
+         windMps: Int = 3) {
+        self.date = date
+        self.tempMin = tempMin
+        self.tempMax = tempMax
+        self.condition = condition
+        self.precipitationMm = precipitationMm
+        self.windMps = windMps
+    }
 }
 
 struct WeatherForecast: Hashable {
@@ -43,44 +58,56 @@ enum WeatherService {
         .kansai: 1, .chugoku: 1, .shikoku: 2, .kyushuOkinawa: 3
     ]
 
-    static func mockForecast(region: Region, now: Date = Date()) -> WeatherForecast {
-        let m = Calendar.current.component(.month, from: now)
-        let d = Calendar.current.component(.day, from: now)
+    /// Deterministic mock weather for a single date. Same date always
+    /// produces the same `WeatherDay`, which lets us paint weather chips on
+    /// arbitrary days (e.g. the weekly calendar) consistently.
+    static func mockDay(region: Region, date: Date) -> WeatherDay {
+        let cal = DateUtils.calendar
+        let m = cal.component(.month, from: date)
+        let d = cal.component(.day, from: date)
         let base = (m >= 6 && m <= 8) ? 28 : (m >= 12 || m <= 2) ? 5 : 18
         let bias = regionTempBias[region] ?? 0
-        let seed = d + m
+        let weekdaySeed = (d + m) % 7
 
-        func day(offset: Int) -> WeatherDay {
-            let dayOfWeek = (seed + offset) % 7
-            let condition: WeatherCondition
-            if dayOfWeek == 2 {
-                condition = .rain
-            } else if dayOfWeek == 5 {
-                condition = .cloudy
-            } else if dayOfWeek == 6 && m <= 2 {
-                condition = .snow
-            } else {
-                condition = .sunny
-            }
-            let variance = (offset * 3) % 5
-            let tempMax = base + bias + variance + (condition == .sunny ? 2 : -1)
-            let tempMin = tempMax - ((m >= 12 || m <= 2) ? 5 : 8)
-            let precip = condition == .rain ? 8 : condition == .snow ? 3 : 0
-            return WeatherDay(
-                date: DateUtils.addDays(now, offset),
-                tempMin: tempMin,
-                tempMax: tempMax,
-                condition: condition,
-                precipitationMm: precip
-            )
+        var condition: WeatherCondition
+        switch weekdaySeed {
+        case 2: condition = .rain
+        case 5: condition = .cloudy
+        case 6 where m <= 2: condition = .snow
+        default: condition = .sunny
+        }
+        var precip = condition == .rain ? 8 : condition == .snow ? 3 : 0
+        var wind = condition == .rain ? 5 : 3
+
+        // Occasional typhoon-like burst (late summer / early autumn).
+        let typhoonSeason = (m == 8 || m == 9 || m == 10)
+        if typhoonSeason && (d % 11 == 1 || d % 11 == 2) {
+            condition = .rain
+            precip = 60
+            wind = 18
+        } else if (m == 6 || m == 7) && (d % 9 == 0) {
+            condition = .rain
+            precip = 35
+            wind = 8
         }
 
-        return WeatherForecast(
-            region: region,
-            fetchedAt: now,
-            today: day(offset: 0),
-            next: [day(offset: 1), day(offset: 2), day(offset: 3)]
+        let variance = (d % 5)
+        let tempMax = base + bias + variance + (condition == .sunny ? 2 : -1)
+        let tempMin = tempMax - ((m >= 12 || m <= 2) ? 5 : 8)
+        return WeatherDay(
+            date: DateUtils.startOfDay(date),
+            tempMin: tempMin,
+            tempMax: tempMax,
+            condition: condition,
+            precipitationMm: precip,
+            windMps: wind
         )
+    }
+
+    static func mockForecast(region: Region, now: Date = Date()) -> WeatherForecast {
+        let today = mockDay(region: region, date: now)
+        let next = (1...3).map { mockDay(region: region, date: DateUtils.addDays(now, $0)) }
+        return WeatherForecast(region: region, fetchedAt: now, today: today, next: next)
     }
 
     static func deriveAdvice(forecast: WeatherForecast) -> WeatherAdviceData {
