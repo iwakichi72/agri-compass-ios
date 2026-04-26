@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		078937994EF7FFE3D2FB6136 /* fertilizers.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D697929622C05F8E514AEE /* fertilizers.json */; };
+		0AA67B43F71F493FB29C7B51 /* BrandLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DABAF616494DEAA4D3180D /* BrandLogoView.swift */; };
 		07FEC472F08378DEBC173B88 /* PreparationKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB241575F9791A25688B3A7A /* PreparationKitView.swift */; };
 		0BF3CC9C2E0C096480E91B20 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F02D8C4EFACE79B6E8DAE /* Crop.swift */; };
 		0FD066CEA6D263AC253490A7 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B59EC1851728C67D9C56AA /* ChallengeDetailView.swift */; };
@@ -143,6 +144,7 @@
 		E68B1A4D3DE2DDB2F81D529B /* AchievementEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEngine.swift; sourceTree = "<group>"; };
 		E8F80FDE6CBC044B4F3C49DB /* HarvestShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestShelfView.swift; sourceTree = "<group>"; };
 		EC07E212BD1F191C4CBC65AC /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		F0DABAF616494DEAA4D3180D /* BrandLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandLogoView.swift; sourceTree = "<group>"; };
 		F3D41A44C3515D8227917AD4 /* SelectorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorsTests.swift; sourceTree = "<group>"; };
 		F3F23845312533A8E2987CBA /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		F97CCDA4AE1D6074B64ECA89 /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				70F61CF90450CA32DF541789 /* ButtonStyles.swift */,
+				F0DABAF616494DEAA4D3180D /* BrandLogoView.swift */,
 				B7BC02D5A645511AFB7A3BF2 /* CardContainer.swift */,
 				F97CCDA4AE1D6074B64ECA89 /* Chip.swift */,
 				85CEB704A252278ED866E50F /* Theme.swift */,
@@ -478,6 +481,7 @@
 				7955DE5F7E566E0B17B72208 /* ActiveCropEntity.swift in Sources */,
 				B67748158546E0C8C4A03B44 /* AgriCompassApp.swift in Sources */,
 				FCB2432F5CE9DCBC9941151C /* BadgeGridView.swift in Sources */,
+				0AA67B43F71F493FB29C7B51 /* BrandLogoView.swift in Sources */,
 				98E5B5C502C78BBD8CA55D7E /* ButtonStyles.swift in Sources */,
 				D13A8BE63B6BC9CC14FD7BCF /* CalendarView.swift in Sources */,
 				A74C5EBD9F5DA7AF3489E882 /* CardContainer.swift in Sources */,

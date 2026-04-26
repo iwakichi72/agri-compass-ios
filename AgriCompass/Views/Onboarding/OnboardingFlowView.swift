@@ -27,11 +27,7 @@ struct OnboardingWelcomeView: View {
         ScrollView {
             VStack(spacing: 24) {
                 VStack(spacing: 8) {
-                    Text("🌱")
-                        .font(.system(size: 64))
-                    Text("アグリコンパス")
-                        .font(.system(size: 28, weight: .bold))
-                        .foregroundStyle(Color.appInk)
+                    BrandLogoView(variant: .hero)
                     Text("はじめての野菜づくりを、迷わずたのしく。")
                         .font(.system(size: 14))
                         .foregroundStyle(Color.appInkSoft)

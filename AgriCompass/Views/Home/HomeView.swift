@@ -21,6 +21,9 @@ struct HomeView: View {
             CropRouteDestination(route: route)
         }
         .toolbar {
+            ToolbarItem(placement: .principal) {
+                BrandLogoView(variant: .navigation)
+            }
             if let region = userStore.profile.selectedRegion {
                 ToolbarItem(placement: .topBarTrailing) {
                     Chip(text: region.label, variant: .leaf, icon: "📍")
