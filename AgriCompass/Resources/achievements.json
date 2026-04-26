@@ -1,0 +1,132 @@
+[
+  {
+    "id": "first-step",
+    "name": "はじめの一歩",
+    "description": "最初のステップを完了しました。",
+    "icon": "🌱",
+    "category": "growing"
+  },
+  {
+    "id": "first-harvest",
+    "name": "はじめての収穫",
+    "description": "初めて作物を収穫しました。",
+    "icon": "🥬",
+    "category": "growing"
+  },
+  {
+    "id": "leaf-master",
+    "name": "葉物マスター",
+    "description": "葉物野菜を3種類収穫",
+    "icon": "🌿",
+    "category": "growing"
+  },
+  {
+    "id": "root-expert",
+    "name": "根菜の目利き",
+    "description": "根菜を適期に収穫",
+    "icon": "🥕",
+    "category": "growing"
+  },
+  {
+    "id": "three-together",
+    "name": "三種の庭",
+    "description": "同時に3種類以上を育てた",
+    "icon": "🌻",
+    "category": "growing"
+  },
+  {
+    "id": "weather-reader",
+    "name": "天気読み",
+    "description": "天気アドバイスを5回確認",
+    "icon": "🌤",
+    "category": "knowledge"
+  },
+  {
+    "id": "why-curious",
+    "name": "なぜなぜ農家",
+    "description": "『なぜやるか』解説を10個読んだ",
+    "icon": "📖",
+    "category": "knowledge"
+  },
+  {
+    "id": "spring-pioneer",
+    "name": "春の開拓者",
+    "description": "春に作物を育て始めた",
+    "icon": "🌸",
+    "category": "season"
+  },
+  {
+    "id": "summer-harvester",
+    "name": "夏の収穫祭",
+    "description": "夏に収穫を経験した",
+    "icon": "☀️",
+    "category": "season"
+  },
+  {
+    "id": "rainy-walker",
+    "name": "雨の日の見回り",
+    "description": "雨の日にアプリを開いた",
+    "icon": "☔",
+    "category": "hidden",
+    "hidden": true
+  },
+  {
+    "id": "streak-7",
+    "name": "一週間、続いた",
+    "description": "7日連続でアプリを開いた",
+    "icon": "🔥",
+    "category": "hidden",
+    "hidden": true
+  },
+  {
+    "id": "streak-30",
+    "name": "ひと月の相棒",
+    "description": "30日連続でアプリを開いた",
+    "icon": "🌟",
+    "category": "hidden",
+    "hidden": true
+  },
+  {
+    "id": "streak-100",
+    "name": "畑とともに100日",
+    "description": "100日連続でアプリを開いた",
+    "icon": "🏆",
+    "category": "hidden",
+    "hidden": true
+  },
+  {
+    "id": "autumn-sower",
+    "name": "秋まきの計",
+    "description": "秋に作物を育て始めた",
+    "icon": "🍂",
+    "category": "season"
+  },
+  {
+    "id": "winter-keeper",
+    "name": "冬の見守り",
+    "description": "冬にも畑を訪ねた",
+    "icon": "❄️",
+    "category": "season"
+  },
+  {
+    "id": "fruit-grower",
+    "name": "実もの育成家",
+    "description": "実もの野菜を3つ収穫した",
+    "icon": "🍅",
+    "category": "growing"
+  },
+  {
+    "id": "bean-friend",
+    "name": "豆の友",
+    "description": "豆類を収穫した",
+    "icon": "🫛",
+    "category": "growing"
+  },
+  {
+    "id": "five-species",
+    "name": "五つの作物",
+    "description": "5種類以上の作物を育てた経験を持つ",
+    "icon": "🌾",
+    "category": "growing"
+  }
+]

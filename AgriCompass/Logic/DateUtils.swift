@@ -1,0 +1,72 @@
+import Foundation
+
+enum DateUtils {
+    static let calendar: Calendar = {
+        var c = Calendar(identifier: .gregorian)
+        c.timeZone = TimeZone.current
+        return c
+    }()
+
+    static func startOfDay(_ d: Date) -> Date {
+        calendar.startOfDay(for: d)
+    }
+
+    static func diffDays(_ a: Date, _ b: Date) -> Int {
+        let da = startOfDay(a)
+        let db = startOfDay(b)
+        return calendar.dateComponents([.day], from: da, to: db).day ?? 0
+    }
+
+    static func addDays(_ d: Date, _ days: Int) -> Date {
+        calendar.date(byAdding: .day, value: days, to: d) ?? d
+    }
+
+    static func formatMD(_ d: Date) -> String {
+        let m = calendar.component(.month, from: d)
+        let day = calendar.component(.day, from: d)
+        return "\(m)/\(day)"
+    }
+
+    static func formatYMD(_ d: Date) -> String {
+        let y = calendar.component(.year, from: d)
+        let m = calendar.component(.month, from: d)
+        let day = calendar.component(.day, from: d)
+        return "\(y)/\(m)/\(day)"
+    }
+
+    static func dateOnlyISO(_ d: Date) -> String {
+        let y = calendar.component(.year, from: d)
+        let m = calendar.component(.month, from: d)
+        let day = calendar.component(.day, from: d)
+        return String(format: "%04d-%02d-%02d", y, m, day)
+    }
+
+    static func formatWeekday(_ d: Date) -> String {
+        let labels = ["日", "月", "火", "水", "木", "金", "土"]
+        let w = calendar.component(.weekday, from: d) - 1
+        return labels[w]
+    }
+
+    /// Monday-based start of week.
+    static func startOfWeek(_ d: Date = Date()) -> Date {
+        let n = startOfDay(d)
+        let weekday = calendar.component(.weekday, from: n) // Sun=1..Sat=7
+        // Convert to Mon=0..Sun=6
+        let zeroBased = (weekday + 5) % 7
+        return calendar.date(byAdding: .day, value: -zeroBased, to: n) ?? n
+    }
+
+    static func weekDates(_ d: Date = Date()) -> [Date] {
+        let start = startOfWeek(d)
+        return (0..<7).compactMap { calendar.date(byAdding: .day, value: $0, to: start) }
+    }
+
+    static func twoWeekDates(_ d: Date = Date()) -> [Date] {
+        let start = startOfWeek(d)
+        return (0..<14).compactMap { calendar.date(byAdding: .day, value: $0, to: start) }
+    }
+
+    static func isSameDay(_ a: Date, _ b: Date) -> Bool {
+        calendar.isDate(a, inSameDayAs: b)
+    }
+}

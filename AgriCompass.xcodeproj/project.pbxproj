@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		078937994EF7FFE3D2FB6136 /* fertilizers.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D697929622C05F8E514AEE /* fertilizers.json */; };
+		07FEC472F08378DEBC173B88 /* PreparationKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB241575F9791A25688B3A7A /* PreparationKitView.swift */; };
+		0BF3CC9C2E0C096480E91B20 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F02D8C4EFACE79B6E8DAE /* Crop.swift */; };
+		0FD066CEA6D263AC253490A7 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B59EC1851728C67D9C56AA /* ChallengeDetailView.swift */; };
+		137F1D2D72761393D8FF14D6 /* AchievementEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B1A4D3DE2DDB2F81D529B /* AchievementEngine.swift */; };
+		1496F551263302FE468DC827 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 1992C5EC027268F0035CDB66 /* achievements.json */; };
+		1E2C6AEC3FDEBD7041B355BA /* HarvestShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F80FDE6CBC044B4F3C49DB /* HarvestShelfView.swift */; };
+		1EA7DDF65AD97CB6887264FA /* tools.json in Resources */ = {isa = PBXBuildFile; fileRef = 34CF9BA95BE14CE5C34FE009 /* tools.json */; };
+		285B9185D2EE585660F786DB /* WeatherBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76522E9540FDE88A79C6BB26 /* WeatherBannerView.swift */; };
+		2D98E4D673E233AB040E1F0A /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F23845312533A8E2987CBA /* Achievement.swift */; };
+		310EED9869D96127C56A003A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E69224C562E5A4CEBE2A2A4 /* Assets.xcassets */; };
+		31FC5351479C3AC3AE655292 /* StreakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA293F2EC8F6BE48FC91B11 /* StreakTests.swift */; };
+		3C8D3B4E65F84717A6B0E2F1 /* UserStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9D4F4B82694C03B0D15E64 /* UserStoreTests.swift */; };
+		323B26A8B0B2CDFBB7F4015A /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B68BE399CE56CC08D999E /* Streak.swift */; };
+		364512418272D8D237C70A61 /* HarvestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3981C90D88EF37DA6FEA6 /* HarvestView.swift */; };
+		39B6DF7555B1E3C759DD65EB /* ChallengesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB0DE44F4C81665CF50492 /* ChallengesSection.swift */; };
+		3B599F829B7B9FE9660E6ACE /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C169D6C071710A334F527B /* Quiz.swift */; };
+		3F7C5D1D24A2AF2292593B9B /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1439248ADC6946009F846FB /* Tool.swift */; };
+		4891F8349ADAD8BCF6244DEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDAC18786034E66B55B1C21 /* HomeView.swift */; };
+		48CBC1A62EF677FBD54E7520 /* ToastOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A560DBAA52B5598BC9236 /* ToastOverlay.swift */; };
+		4F05BEAC0B1C9C81ADA132AB /* StepListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1746F2313C26CF2EC3886 /* StepListView.swift */; };
+		582EE3F42190782731848418 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7815E82E692E1B7C7EC4C6E3 /* UserProfile.swift */; };
+		5F4D1C2703FAB2CFF11EDD01 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76182F0316633B91B4DCEF /* MyPageView.swift */; };
+		6658881F8B6AB276FEC8706B /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0802106906CD6447ED1367E0 /* Challenge.swift */; };
+		6A3B82B7BFE8460A089E6A91 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CCDA4AE1D6074B64ECA89 /* Chip.swift */; };
+		7377AD603B7D2B91AC801B6B /* QuizFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F8D239279A8D45F85F11B /* QuizFlowView.swift */; };
+		77AF65A2F82343414DD91D23 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA54AEBF9B16C2300E41A2 /* RootView.swift */; };
+		7955DE5F7E566E0B17B72208 /* ActiveCropEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E321A03B7CDEB5D3B64465AE /* ActiveCropEntity.swift */; };
+		83073F62601CEAC662918D7F /* ChallengeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F55FFD3BC938B064BB1F5 /* ChallengeEngine.swift */; };
+		84A758C6B671327AF466E928 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930A5FB7EE777C0F11BE036 /* ShoppingListView.swift */; };
+		8CB1F9D033FDE3868573EC86 /* FarmOverviewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9574D8189C27D71AA5CFB07E /* FarmOverviewSection.swift */; };
+		8CE652E600FEB9EE5F87BF7D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306144E6DAEB94173FBA512B /* Enums.swift */; };
+		8F5B5ED4975C96961F453C1F /* crops.json in Resources */ = {isa = PBXBuildFile; fileRef = C6B9721F86043801F5D75606 /* crops.json */; };
+		926257F14E9C5F84A4FBD95B /* SelectorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D41A44C3515D8227917AD4 /* SelectorsTests.swift */; };
+		93099A3CCC90C6C35E0D2B3A /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07E212BD1F191C4CBC65AC /* UserStore.swift */; };
+		95E82CAADA26550944969159 /* NextCropRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D384BD24F7175D7A1CB811 /* NextCropRecommendView.swift */; };
+		97E70542FB9DE43C84CC946B /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1764A0A119803384C3236A /* OnboardingFlowView.swift */; };
+		984F9C8AC379B32F88271E18 /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D9C1D525C608727FC7026B /* NotificationSettingsView.swift */; };
+		98E5B5C502C78BBD8CA55D7E /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F61CF90450CA32DF541789 /* ButtonStyles.swift */; };
+		9D340437664276891CB06B22 /* CropSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1772D5E6515DC7F8DFB18B9B /* CropSelectView.swift */; };
+		A15EA0B87561369E61365CAE /* InventoryEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA12B9F3210B1B78951D9D /* InventoryEditorView.swift */; };
+		A52F778E4CA50A281DBA4A8C /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AEA1770B7977C3998B774EF /* challenges.json */; };
+		A74C5EBD9F5DA7AF3489E882 /* CardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC02D5A645511AFB7A3BF2 /* CardContainer.swift */; };
+		AA6385F15B82A55E0104379C /* Selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5003FD9A1C6C90FEDA16E413 /* Selectors.swift */; };
+		B1C8F7E59561A7F8B1FCFDF8 /* HarvestRecordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60308A74C429284CEDF5AD38 /* HarvestRecordEntity.swift */; };
+		B67748158546E0C8C4A03B44 /* AgriCompassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D87524B395E350B22E5AAF5 /* AgriCompassApp.swift */; };
+		C2F1E7860CC9C45988CB06DD /* ChallengeProgressEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1021A7D381386B70ED275FB /* ChallengeProgressEntity.swift */; };
+		C9D63BB2EE0FA74980F3BB3C /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB99B9F9F6EA9920FFC4EF /* DateUtils.swift */; };
+		CC12949DC71EF0054FE25FCA /* TodayTasksSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC5390D62A375E466AC583 /* TodayTasksSection.swift */; };
+		CFA8757EE928AFF3E809C0F7 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7298BD2683D176085D5EE4 /* ToastCenter.swift */; };
+		D13A8BE63B6BC9CC14FD7BCF /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171877232C264B7D14E78FFD /* CalendarView.swift */; };
+		D59D0472EB9B982C58538CE6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CF75D526109C6A8E6B8E1E /* Weather.swift */; };
+		D61C5910170C4864E6A3E679 /* CatalogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47761B0874C49E78EB06E27 /* CatalogStore.swift */; };
+		DC60C2C539BD00BD7E25830F /* CatalogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83877DC8B21333C85A83945 /* CatalogListView.swift */; };
+		E6B4FC83D4FC8536EE1EC9F4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEB704A252278ED866E50F /* Theme.swift */; };
+		E88A025E53A64F3AA183A591 /* Recommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434EC3C5FF0F8684BE9CBC1 /* Recommend.swift */; };
+		F0FD6540762183E49FD6C813 /* CropDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5D61C7047547A6DEB31E8 /* CropDetailView.swift */; };
+		F4A42C77E82357D4D85BEF06 /* AchievementProgressEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFDD989027887A041C2799 /* AchievementProgressEntity.swift */; };
+		F6F9A5A3363E4DAA9549B819 /* Fertilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0ABD569E5447ECD2F02A2 /* Fertilizer.swift */; };
+		F7F135DFC82416E2F8013AB7 /* DataIntegrityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415724479537E8F2C98089E /* DataIntegrityTests.swift */; };
+		FCB2432F5CE9DCBC9941151C /* BadgeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B615A401D15F356AEDF80 /* BadgeGridView.swift */; };
+		FF4B091108E1A10279C33BA1 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6039B3C59BD5A41CC19FDB15 /* MainTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC3C96357880CEA207B13F8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 545B29D70A3C34016FD43716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B1D4C3FF382EDC763199E13;
+			remoteInfo = AgriCompass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042B68BE399CE56CC08D999E /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
+		0802106906CD6447ED1367E0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		09C169D6C071710A334F527B /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		171877232C264B7D14E78FFD /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1772D5E6515DC7F8DFB18B9B /* CropSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropSelectView.swift; sourceTree = "<group>"; };
+		17C1746F2313C26CF2EC3886 /* StepListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepListView.swift; sourceTree = "<group>"; };
+		1992C5EC027268F0035CDB66 /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		19CF75D526109C6A8E6B8E1E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1E76182F0316633B91B4DCEF /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		1F5F8D239279A8D45F85F11B /* QuizFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizFlowView.swift; sourceTree = "<group>"; };
+		21DC5390D62A375E466AC583 /* TodayTasksSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTasksSection.swift; sourceTree = "<group>"; };
+		22D697929622C05F8E514AEE /* fertilizers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fertilizers.json; sourceTree = "<group>"; };
+		244BBDA77625342120F90B7E /* AgriCompass.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AgriCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9D4F4B82694C03B0D15E64 /* UserStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoreTests.swift; sourceTree = "<group>"; };
+		28DB0DE44F4C81665CF50492 /* ChallengesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesSection.swift; sourceTree = "<group>"; };
+		306144E6DAEB94173FBA512B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		32A3981C90D88EF37DA6FEA6 /* HarvestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestView.swift; sourceTree = "<group>"; };
+		34CF9BA95BE14CE5C34FE009 /* tools.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tools.json; sourceTree = "<group>"; };
+		3EA293F2EC8F6BE48FC91B11 /* StreakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTests.swift; sourceTree = "<group>"; };
+		43BA54AEBF9B16C2300E41A2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		4AEA1770B7977C3998B774EF /* challenges.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
+		5003FD9A1C6C90FEDA16E413 /* Selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectors.swift; sourceTree = "<group>"; };
+		537F02D8C4EFACE79B6E8DAE /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		5930A5FB7EE777C0F11BE036 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
+		5D87524B395E350B22E5AAF5 /* AgriCompassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriCompassApp.swift; sourceTree = "<group>"; };
+		60308A74C429284CEDF5AD38 /* HarvestRecordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestRecordEntity.swift; sourceTree = "<group>"; };
+		6039B3C59BD5A41CC19FDB15 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		607E68C5D863072EF733D114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		68B59EC1851728C67D9C56AA /* ChallengeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailView.swift; sourceTree = "<group>"; };
+		6C09D214DA81668005002655 /* AgriCompassTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AgriCompassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F61CF90450CA32DF541789 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		715A560DBAA52B5598BC9236 /* ToastOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOverlay.swift; sourceTree = "<group>"; };
+		72D9C1D525C608727FC7026B /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		7415724479537E8F2C98089E /* DataIntegrityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataIntegrityTests.swift; sourceTree = "<group>"; };
+		76522E9540FDE88A79C6BB26 /* WeatherBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBannerView.swift; sourceTree = "<group>"; };
+		77D384BD24F7175D7A1CB811 /* NextCropRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCropRecommendView.swift; sourceTree = "<group>"; };
+		7815E82E692E1B7C7EC4C6E3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		7AA0ABD569E5447ECD2F02A2 /* Fertilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fertilizer.swift; sourceTree = "<group>"; };
+		7DE5D61C7047547A6DEB31E8 /* CropDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropDetailView.swift; sourceTree = "<group>"; };
+		7E9B615A401D15F356AEDF80 /* BadgeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeGridView.swift; sourceTree = "<group>"; };
+		85CB99B9F9F6EA9920FFC4EF /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		85CEB704A252278ED866E50F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8CDAC18786034E66B55B1C21 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9574D8189C27D71AA5CFB07E /* FarmOverviewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmOverviewSection.swift; sourceTree = "<group>"; };
+		9A7298BD2683D176085D5EE4 /* ToastCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
+		9C1764A0A119803384C3236A /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
+		9E69224C562E5A4CEBE2A2A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A14F55FFD3BC938B064BB1F5 /* ChallengeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeEngine.swift; sourceTree = "<group>"; };
+		A434EC3C5FF0F8684BE9CBC1 /* Recommend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommend.swift; sourceTree = "<group>"; };
+		A83877DC8B21333C85A83945 /* CatalogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListView.swift; sourceTree = "<group>"; };
+		B1021A7D381386B70ED275FB /* ChallengeProgressEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeProgressEntity.swift; sourceTree = "<group>"; };
+		B7BC02D5A645511AFB7A3BF2 /* CardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainer.swift; sourceTree = "<group>"; };
+		BECFDD989027887A041C2799 /* AchievementProgressEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementProgressEntity.swift; sourceTree = "<group>"; };
+		C1439248ADC6946009F846FB /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		C47761B0874C49E78EB06E27 /* CatalogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogStore.swift; sourceTree = "<group>"; };
+		C6B9721F86043801F5D75606 /* crops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = crops.json; sourceTree = "<group>"; };
+		CCCA12B9F3210B1B78951D9D /* InventoryEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryEditorView.swift; sourceTree = "<group>"; };
+		E321A03B7CDEB5D3B64465AE /* ActiveCropEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCropEntity.swift; sourceTree = "<group>"; };
+		E68B1A4D3DE2DDB2F81D529B /* AchievementEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEngine.swift; sourceTree = "<group>"; };
+		E8F80FDE6CBC044B4F3C49DB /* HarvestShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestShelfView.swift; sourceTree = "<group>"; };
+		EC07E212BD1F191C4CBC65AC /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		F3D41A44C3515D8227917AD4 /* SelectorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorsTests.swift; sourceTree = "<group>"; };
+		F3F23845312533A8E2987CBA /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		F97CCDA4AE1D6074B64ECA89 /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		FB241575F9791A25688B3A7A /* PreparationKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationKitView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		07F08234164038C8A61C5FEA /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				68B59EC1851728C67D9C56AA /* ChallengeDetailView.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		094064D745E07A0DD3AAA057 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A701AB252F23017A5FCD704D /* Calendar */,
+				07F08234164038C8A61C5FEA /* Challenges */,
+				4A104543C1E5F3D2BC1F2586 /* Crops */,
+				A3FECB2B90F4DD6655B704BA /* Home */,
+				827C3B8C1EB119628242FA0B /* MyPage */,
+				824825874B3BAD5EC2AB8D9E /* Onboarding */,
+				DC2DFF84F076EC7354EBBF66 /* Root */,
+				E85C50BADD942117160B98DC /* UI */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31B3DC6B1D5CEC4C372BBDC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1992C5EC027268F0035CDB66 /* achievements.json */,
+				9E69224C562E5A4CEBE2A2A4 /* Assets.xcassets */,
+				4AEA1770B7977C3998B774EF /* challenges.json */,
+				C6B9721F86043801F5D75606 /* crops.json */,
+				22D697929622C05F8E514AEE /* fertilizers.json */,
+				34CF9BA95BE14CE5C34FE009 /* tools.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		33C6DF852732003E1B744C01 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				C47761B0874C49E78EB06E27 /* CatalogStore.swift */,
+				EC07E212BD1F191C4CBC65AC /* UserStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		3F7CCAE75C41A92C1C1E1051 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				F3F23845312533A8E2987CBA /* Achievement.swift */,
+				0802106906CD6447ED1367E0 /* Challenge.swift */,
+				537F02D8C4EFACE79B6E8DAE /* Crop.swift */,
+				306144E6DAEB94173FBA512B /* Enums.swift */,
+				7AA0ABD569E5447ECD2F02A2 /* Fertilizer.swift */,
+				C1439248ADC6946009F846FB /* Tool.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		4A104543C1E5F3D2BC1F2586 /* Crops */ = {
+			isa = PBXGroup;
+			children = (
+				A83877DC8B21333C85A83945 /* CatalogListView.swift */,
+				7DE5D61C7047547A6DEB31E8 /* CropDetailView.swift */,
+				1772D5E6515DC7F8DFB18B9B /* CropSelectView.swift */,
+				32A3981C90D88EF37DA6FEA6 /* HarvestView.swift */,
+				77D384BD24F7175D7A1CB811 /* NextCropRecommendView.swift */,
+				FB241575F9791A25688B3A7A /* PreparationKitView.swift */,
+				1F5F8D239279A8D45F85F11B /* QuizFlowView.swift */,
+				17C1746F2313C26CF2EC3886 /* StepListView.swift */,
+			);
+			path = Crops;
+			sourceTree = "<group>";
+		};
+		4C7C4728B64E33E1E0016EF8 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BECFDD989027887A041C2799 /* AchievementProgressEntity.swift */,
+				E321A03B7CDEB5D3B64465AE /* ActiveCropEntity.swift */,
+				B1021A7D381386B70ED275FB /* ChallengeProgressEntity.swift */,
+				60308A74C429284CEDF5AD38 /* HarvestRecordEntity.swift */,
+				7815E82E692E1B7C7EC4C6E3 /* UserProfile.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		5DF0BD2650A780543C2DAEFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F7CCAE75C41A92C1C1E1051 /* Catalog */,
+				4C7C4728B64E33E1E0016EF8 /* Persistence */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		824825874B3BAD5EC2AB8D9E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9C1764A0A119803384C3236A /* OnboardingFlowView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		827C3B8C1EB119628242FA0B /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				7E9B615A401D15F356AEDF80 /* BadgeGridView.swift */,
+				28DB0DE44F4C81665CF50492 /* ChallengesSection.swift */,
+				E8F80FDE6CBC044B4F3C49DB /* HarvestShelfView.swift */,
+				CCCA12B9F3210B1B78951D9D /* InventoryEditorView.swift */,
+				1E76182F0316633B91B4DCEF /* MyPageView.swift */,
+				72D9C1D525C608727FC7026B /* NotificationSettingsView.swift */,
+				5930A5FB7EE777C0F11BE036 /* ShoppingListView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		8741AB879B50AEA623FABD98 /* Toasts */ = {
+			isa = PBXGroup;
+			children = (
+				9A7298BD2683D176085D5EE4 /* ToastCenter.swift */,
+			);
+			path = Toasts;
+			sourceTree = "<group>";
+		};
+		A3FECB2B90F4DD6655B704BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9574D8189C27D71AA5CFB07E /* FarmOverviewSection.swift */,
+				8CDAC18786034E66B55B1C21 /* HomeView.swift */,
+				21DC5390D62A375E466AC583 /* TodayTasksSection.swift */,
+				76522E9540FDE88A79C6BB26 /* WeatherBannerView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A701AB252F23017A5FCD704D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				171877232C264B7D14E78FFD /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		BFA50B7C0EF1ED19F4125ADD /* AgriCompass */ = {
+			isa = PBXGroup;
+			children = (
+				FF84EFB2B3A3E02B3A46620F /* Logic */,
+				5DF0BD2650A780543C2DAEFD /* Models */,
+				31B3DC6B1D5CEC4C372BBDC4 /* Resources */,
+				33C6DF852732003E1B744C01 /* Stores */,
+				8741AB879B50AEA623FABD98 /* Toasts */,
+				094064D745E07A0DD3AAA057 /* Views */,
+				5D87524B395E350B22E5AAF5 /* AgriCompassApp.swift */,
+				607E68C5D863072EF733D114 /* Info.plist */,
+			);
+			path = AgriCompass;
+			sourceTree = "<group>";
+		};
+		C5A38B2C46F9E83FA5E25736 = {
+			isa = PBXGroup;
+			children = (
+				BFA50B7C0EF1ED19F4125ADD /* AgriCompass */,
+				F628E72C8FE66EC9787DEA6F /* AgriCompassTests */,
+				DC888395B8000BF56258F3E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC2DFF84F076EC7354EBBF66 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6039B3C59BD5A41CC19FDB15 /* MainTabView.swift */,
+				43BA54AEBF9B16C2300E41A2 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		DC888395B8000BF56258F3E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				244BBDA77625342120F90B7E /* AgriCompass.app */,
+				6C09D214DA81668005002655 /* AgriCompassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E85C50BADD942117160B98DC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				70F61CF90450CA32DF541789 /* ButtonStyles.swift */,
+				B7BC02D5A645511AFB7A3BF2 /* CardContainer.swift */,
+				F97CCDA4AE1D6074B64ECA89 /* Chip.swift */,
+				85CEB704A252278ED866E50F /* Theme.swift */,
+				715A560DBAA52B5598BC9236 /* ToastOverlay.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F628E72C8FE66EC9787DEA6F /* AgriCompassTests */ = {
+			isa = PBXGroup;
+			children = (
+				7415724479537E8F2C98089E /* DataIntegrityTests.swift */,
+				F3D41A44C3515D8227917AD4 /* SelectorsTests.swift */,
+				3EA293F2EC8F6BE48FC91B11 /* StreakTests.swift */,
+				2A9D4F4B82694C03B0D15E64 /* UserStoreTests.swift */,
+			);
+			path = AgriCompassTests;
+			sourceTree = "<group>";
+		};
+		FF84EFB2B3A3E02B3A46620F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E68B1A4D3DE2DDB2F81D529B /* AchievementEngine.swift */,
+				A14F55FFD3BC938B064BB1F5 /* ChallengeEngine.swift */,
+				85CB99B9F9F6EA9920FFC4EF /* DateUtils.swift */,
+				09C169D6C071710A334F527B /* Quiz.swift */,
+				A434EC3C5FF0F8684BE9CBC1 /* Recommend.swift */,
+				5003FD9A1C6C90FEDA16E413 /* Selectors.swift */,
+				042B68BE399CE56CC08D999E /* Streak.swift */,
+				19CF75D526109C6A8E6B8E1E /* Weather.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93A05EAEAEECE6D363B9E9E8 /* AgriCompassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1DBD0F7DC4A517394266005 /* Build configuration list for PBXNativeTarget "AgriCompassTests" */;
+			buildPhases = (
+				B894E4A7E91A50823530A293 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB84256D20C1AA07572DEDA6 /* PBXTargetDependency */,
+			);
+			name = AgriCompassTests;
+			packageProductDependencies = (
+			);
+			productName = AgriCompassTests;
+			productReference = 6C09D214DA81668005002655 /* AgriCompassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B1D4C3FF382EDC763199E13 /* AgriCompass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62AC739AA92D1835AC96B60B /* Build configuration list for PBXNativeTarget "AgriCompass" */;
+			buildPhases = (
+				98D2691C18D60D764968DF5F /* Sources */,
+				188666A3AD75D2BEDD4585F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgriCompass;
+			packageProductDependencies = (
+			);
+			productName = AgriCompass;
+			productReference = 244BBDA77625342120F90B7E /* AgriCompass.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		545B29D70A3C34016FD43716 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					93A05EAEAEECE6D363B9E9E8 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					9B1D4C3FF382EDC763199E13 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5E0898E5685410A4F5F0F91F /* Build configuration list for PBXProject "AgriCompass" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C5A38B2C46F9E83FA5E25736;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DC888395B8000BF56258F3E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B1D4C3FF382EDC763199E13 /* AgriCompass */,
+				93A05EAEAEECE6D363B9E9E8 /* AgriCompassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188666A3AD75D2BEDD4585F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310EED9869D96127C56A003A /* Assets.xcassets in Resources */,
+				1496F551263302FE468DC827 /* achievements.json in Resources */,
+				A52F778E4CA50A281DBA4A8C /* challenges.json in Resources */,
+				8F5B5ED4975C96961F453C1F /* crops.json in Resources */,
+				078937994EF7FFE3D2FB6136 /* fertilizers.json in Resources */,
+				1EA7DDF65AD97CB6887264FA /* tools.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98D2691C18D60D764968DF5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D98E4D673E233AB040E1F0A /* Achievement.swift in Sources */,
+				137F1D2D72761393D8FF14D6 /* AchievementEngine.swift in Sources */,
+				F4A42C77E82357D4D85BEF06 /* AchievementProgressEntity.swift in Sources */,
+				7955DE5F7E566E0B17B72208 /* ActiveCropEntity.swift in Sources */,
+				B67748158546E0C8C4A03B44 /* AgriCompassApp.swift in Sources */,
+				FCB2432F5CE9DCBC9941151C /* BadgeGridView.swift in Sources */,
+				98E5B5C502C78BBD8CA55D7E /* ButtonStyles.swift in Sources */,
+				D13A8BE63B6BC9CC14FD7BCF /* CalendarView.swift in Sources */,
+				A74C5EBD9F5DA7AF3489E882 /* CardContainer.swift in Sources */,
+				DC60C2C539BD00BD7E25830F /* CatalogListView.swift in Sources */,
+				D61C5910170C4864E6A3E679 /* CatalogStore.swift in Sources */,
+				6658881F8B6AB276FEC8706B /* Challenge.swift in Sources */,
+				0FD066CEA6D263AC253490A7 /* ChallengeDetailView.swift in Sources */,
+				83073F62601CEAC662918D7F /* ChallengeEngine.swift in Sources */,
+				C2F1E7860CC9C45988CB06DD /* ChallengeProgressEntity.swift in Sources */,
+				39B6DF7555B1E3C759DD65EB /* ChallengesSection.swift in Sources */,
+				6A3B82B7BFE8460A089E6A91 /* Chip.swift in Sources */,
+				0BF3CC9C2E0C096480E91B20 /* Crop.swift in Sources */,
+				F0FD6540762183E49FD6C813 /* CropDetailView.swift in Sources */,
+				9D340437664276891CB06B22 /* CropSelectView.swift in Sources */,
+				C9D63BB2EE0FA74980F3BB3C /* DateUtils.swift in Sources */,
+				8CE652E600FEB9EE5F87BF7D /* Enums.swift in Sources */,
+				8CB1F9D033FDE3868573EC86 /* FarmOverviewSection.swift in Sources */,
+				F6F9A5A3363E4DAA9549B819 /* Fertilizer.swift in Sources */,
+				B1C8F7E59561A7F8B1FCFDF8 /* HarvestRecordEntity.swift in Sources */,
+				1E2C6AEC3FDEBD7041B355BA /* HarvestShelfView.swift in Sources */,
+				364512418272D8D237C70A61 /* HarvestView.swift in Sources */,
+				4891F8349ADAD8BCF6244DEE /* HomeView.swift in Sources */,
+				A15EA0B87561369E61365CAE /* InventoryEditorView.swift in Sources */,
+				FF4B091108E1A10279C33BA1 /* MainTabView.swift in Sources */,
+				5F4D1C2703FAB2CFF11EDD01 /* MyPageView.swift in Sources */,
+				95E82CAADA26550944969159 /* NextCropRecommendView.swift in Sources */,
+				984F9C8AC379B32F88271E18 /* NotificationSettingsView.swift in Sources */,
+				97E70542FB9DE43C84CC946B /* OnboardingFlowView.swift in Sources */,
+				07FEC472F08378DEBC173B88 /* PreparationKitView.swift in Sources */,
+				3B599F829B7B9FE9660E6ACE /* Quiz.swift in Sources */,
+				7377AD603B7D2B91AC801B6B /* QuizFlowView.swift in Sources */,
+				E88A025E53A64F3AA183A591 /* Recommend.swift in Sources */,
+				77AF65A2F82343414DD91D23 /* RootView.swift in Sources */,
+				AA6385F15B82A55E0104379C /* Selectors.swift in Sources */,
+				84A758C6B671327AF466E928 /* ShoppingListView.swift in Sources */,
+				4F05BEAC0B1C9C81ADA132AB /* StepListView.swift in Sources */,
+				323B26A8B0B2CDFBB7F4015A /* Streak.swift in Sources */,
+				E6B4FC83D4FC8536EE1EC9F4 /* Theme.swift in Sources */,
+				CFA8757EE928AFF3E809C0F7 /* ToastCenter.swift in Sources */,
+				48CBC1A62EF677FBD54E7520 /* ToastOverlay.swift in Sources */,
+				CC12949DC71EF0054FE25FCA /* TodayTasksSection.swift in Sources */,
+				3F7C5D1D24A2AF2292593B9B /* Tool.swift in Sources */,
+				582EE3F42190782731848418 /* UserProfile.swift in Sources */,
+				93099A3CCC90C6C35E0D2B3A /* UserStore.swift in Sources */,
+				D59D0472EB9B982C58538CE6 /* Weather.swift in Sources */,
+				285B9185D2EE585660F786DB /* WeatherBannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B894E4A7E91A50823530A293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F135DFC82416E2F8013AB7 /* DataIntegrityTests.swift in Sources */,
+				926257F14E9C5F84A4FBD95B /* SelectorsTests.swift in Sources */,
+				31FC5351479C3AC3AE655292 /* StreakTests.swift in Sources */,
+				3C8D3B4E65F84717A6B0E2F1 /* UserStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB84256D20C1AA07572DEDA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B1D4C3FF382EDC763199E13 /* AgriCompass */;
+			targetProxy = BC3C96357880CEA207B13F8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14B969C5E4E9EF05647B3CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.agricompass.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgriCompass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgriCompass";
+			};
+			name = Release;
+		};
+		23EE75A5C23CC9EA043BE906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = ForestColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AgriCompass/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "アグリコンパス";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.agricompass.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6F6C0FBF4267F723437D3B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		8E92DDBD7AF31F8C7EE6965B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = ForestColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AgriCompass/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "アグリコンパス";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.agricompass.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CED63F359B0B09A940BA8499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.agricompass.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgriCompass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgriCompass";
+			};
+			name = Debug;
+		};
+		D7E1B223DA17354FE350D0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E0898E5685410A4F5F0F91F /* Build configuration list for PBXProject "AgriCompass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6C0FBF4267F723437D3B98 /* Debug */,
+				D7E1B223DA17354FE350D0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		62AC739AA92D1835AC96B60B /* Build configuration list for PBXNativeTarget "AgriCompass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EE75A5C23CC9EA043BE906 /* Debug */,
+				8E92DDBD7AF31F8C7EE6965B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1DBD0F7DC4A517394266005 /* Build configuration list for PBXNativeTarget "AgriCompassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED63F359B0B09A940BA8499 /* Debug */,
+				14B969C5E4E9EF05647B3CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 545B29D70A3C34016FD43716 /* Project object */;
+}

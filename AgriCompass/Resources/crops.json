@@ -1,0 +1,2366 @@
+[
+  {
+    "id": "mini-tomato",
+    "name": "ミニトマト",
+    "nameKana": "みにとまと",
+    "emoji": "🍅",
+    "summary": "初心者に人気。プランター1つでも夏中収穫が続く定番。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "summer"],
+    "difficulty": "easy",
+    "requiredSpace": "pot",
+    "category": "fruit",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 4,
+          "startDay": 20,
+          "endMonth": 5,
+          "endDay": 25
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 4,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 20
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 5,
+          "startDay": 20,
+          "endMonth": 6,
+          "endDay": 24
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 5,
+          "startDay": 4,
+          "endMonth": 6,
+          "endDay": 8
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 4,
+          "startDay": 20,
+          "endMonth": 5,
+          "endDay": 25
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 4,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 15
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 4,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 15
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 3,
+          "startDay": 30,
+          "endMonth": 5,
+          "endDay": 4
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "苗を植える",
+        "daysFromStart": 0,
+        "description": "深さ15cm程度の穴を掘り、苗をそっと植え付けて水をたっぷりあげます。",
+        "why": "植え付け直後に水を切らすと根がうまく張りません。最初の一週間で根がしっかり張ると、後の水切れや倒伏をぐっと防げます。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "support",
+        "name": "支柱立て",
+        "daysFromStart": 7,
+        "description": "苗から5cm離して1.5mの支柱を立て、8の字でゆるく結びます。",
+        "why": "茎が太くなる前に支柱で支えると、実がついたときの倒伏を防げます。きつく縛ると茎が傷むので、ゆるめが正解です。",
+        "tools": ["support-stake", "tying-tape"]
+      },
+      {
+        "id": "prune",
+        "name": "わき芽かき",
+        "daysFromStart": 20,
+        "description": "主枝と葉の付け根から出る小さな芽を、天気の良い午前中に摘み取ります。",
+        "why": "わき芽をそのままにすると養分が分散し、実の数は増えても小さくなります。午前中に摘むと切り口が乾きやすく病気になりにくいです。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 35,
+        "description": "株元から少し離した場所に、一握りの野菜用肥料をまきます。",
+        "why": "花が咲き始めると栄養を使い始めます。この時期に追肥することで、実付きと味がしっかりしてきます。",
+        "fertilizers": [
+          {
+            "fertilizerId": "vegetable-chemical",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 60,
+        "description": "実全体が赤く色づいたものから、朝のうちにヘタごとハサミで収穫します。",
+        "why": "朝は実がしっかりしていて味が濃い時間帯です。完熟を見逃すと割れやすくなるので、色づいたらすぐに採ってあげましょう。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "直径2〜3cm",
+      "colorHint": "全体が赤く、ヘタがピンとしている",
+      "daysFromSowing": {
+        "early": 55,
+        "ready": 65,
+        "late": 90
+      },
+      "earlyCriteria": "まだ緑やオレンジの実が多く、赤い実はまばら",
+      "readyCriteria": "実全体が深い赤に色づき、軽く触ると弾力がある",
+      "lateCriteria": "実が割れたり、触ると柔らかく感じる"
+    },
+    "rotationFamily": "ナス科",
+    "avoidAfter": ["ナス科"],
+    "recommendedNext": ["komatsuna", "radish", "spinach"],
+    "weatherNotes": {
+      "wateringRule": "土の表面が乾いたらたっぷり。実がつき始めたら少し控えめに。",
+      "frostSensitive": true,
+      "heatSensitive": false,
+      "note": "梅雨時は過湿に注意。"
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "support-stake",
+        "required": false
+      },
+      {
+        "toolId": "tying-tape",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "vegetable-chemical",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "eggplant",
+    "name": "ナス",
+    "nameKana": "なす",
+    "emoji": "🍆",
+    "summary": "夏中つややかな実を長く楽しめる。水と肥料が鍵。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "summer"],
+    "difficulty": "medium",
+    "requiredSpace": "medium",
+    "category": "fruit",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 5,
+          "startDay": 1,
+          "endMonth": 6,
+          "endDay": 5
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 6,
+          "endDay": 1
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 5,
+          "startDay": 31,
+          "endMonth": 7,
+          "endDay": 5
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 5,
+          "startDay": 15,
+          "endMonth": 6,
+          "endDay": 19
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 5,
+          "startDay": 1,
+          "endMonth": 6,
+          "endDay": 5
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 4,
+          "startDay": 21,
+          "endMonth": 5,
+          "endDay": 26
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 4,
+          "startDay": 21,
+          "endMonth": 5,
+          "endDay": 26
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 4,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 15
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "苗を植える",
+        "daysFromStart": 0,
+        "description": "株間50cm以上を確保して植え付けます。",
+        "why": "ナスは根を大きく張る作物です。狭いと葉が混み合って病気の原因になります。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "support",
+        "name": "支柱立て",
+        "daysFromStart": 7,
+        "description": "仮支柱のあと、本支柱を3本立てて主枝と側枝を誘引します。",
+        "why": "枝が折れると収穫量が一気に落ちます。早めの誘引が長期収穫の要です。",
+        "tools": ["support-stake", "tying-tape"]
+      },
+      {
+        "id": "prune",
+        "name": "整枝（3本仕立て）",
+        "daysFromStart": 25,
+        "description": "最初の花の下2本の側枝を残し、それ以下はすべて取ります。",
+        "why": "3本仕立てにすることで、風通しと日当たりが両立できます。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 40,
+        "description": "2週間に一度、株元から離して追肥します。",
+        "why": "ナスは肥料食いです。切らすと花が落ちやすくなります。",
+        "fertilizers": [
+          {
+            "fertilizerId": "vegetable-chemical",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 70,
+        "description": "若どり気味にハサミで切り取ります。",
+        "why": "大きくしすぎると株が疲れ、その後の実付きが悪くなります。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "長さ12〜15cm",
+      "colorHint": "濃い紫で表面がつやつや",
+      "daysFromSowing": {
+        "early": 60,
+        "ready": 75,
+        "late": 100
+      },
+      "earlyCriteria": "まだ小ぶりで、ヘタが実より大きく見える",
+      "readyCriteria": "実が12cm前後でツヤがあり、ヘタもしっかりしている",
+      "lateCriteria": "表面がくすみ、種が目立つようになる"
+    },
+    "rotationFamily": "ナス科",
+    "avoidAfter": ["ナス科"],
+    "recommendedNext": ["radish", "spinach", "komatsuna"],
+    "weatherNotes": {
+      "wateringRule": "乾燥に弱いので、真夏は朝夕2回たっぷり。",
+      "frostSensitive": true,
+      "heatSensitive": false
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "support-stake",
+        "required": false
+      },
+      {
+        "toolId": "tying-tape",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "vegetable-chemical",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "cucumber",
+    "name": "きゅうり",
+    "nameKana": "きゅうり",
+    "emoji": "🥒",
+    "summary": "成長が早く、毎日収穫の楽しみがある夏野菜。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "summer"],
+    "difficulty": "easy",
+    "requiredSpace": "small",
+    "category": "fruit",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 6,
+          "endDay": 10
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 6,
+          "endDay": 5
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 5,
+          "startDay": 25,
+          "endMonth": 7,
+          "endDay": 10
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 5,
+          "startDay": 9,
+          "endMonth": 6,
+          "endDay": 24
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 6,
+          "endDay": 10
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 31
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 31
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 4,
+          "startDay": 4,
+          "endMonth": 5,
+          "endDay": 20
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "苗を植える",
+        "daysFromStart": 0,
+        "description": "株間40cmで植え、たっぷり水をやります。",
+        "why": "根が浅いので、乾燥させると生育が止まります。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "net",
+        "name": "ネット張り",
+        "daysFromStart": 10,
+        "description": "つるが絡みやすいネットを張ります。",
+        "why": "きゅうりはつるを伸ばして上へ向かいます。ネットがあると風通しがよく病気も減ります。",
+        "tools": ["insect-net", "support-stake"]
+      },
+      {
+        "id": "pinch",
+        "name": "摘芯・摘葉",
+        "daysFromStart": 25,
+        "description": "主枝がネットの上まで伸びたら先端を摘みます。",
+        "why": "上にばかり養分が行くのを防ぎ、下の実に力を回せます。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 30,
+        "description": "花が咲き始めたら追肥します。",
+        "why": "実が次々できる作物なので、栄養切れがそのまま収量減につながります。",
+        "fertilizers": [
+          {
+            "fertilizerId": "vegetable-chemical",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 55,
+        "description": "長さ20cm前後を目安に朝採りします。",
+        "why": "収穫が遅れると株が疲れ、次の実が育ちにくくなります。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "長さ18〜22cm",
+      "colorHint": "濃い緑でトゲがしっかりしている",
+      "daysFromSowing": {
+        "early": 45,
+        "ready": 55,
+        "late": 70
+      },
+      "earlyCriteria": "まだ細く、表面のトゲがやわらかい",
+      "readyCriteria": "20cm前後でトゲがしっかり、表面にハリがある",
+      "lateCriteria": "太りすぎ、皮が硬く種が大きくなる"
+    },
+    "rotationFamily": "ウリ科",
+    "avoidAfter": ["ウリ科"],
+    "recommendedNext": ["spinach", "komatsuna", "edamame"],
+    "weatherNotes": {
+      "wateringRule": "毎日たっぷり。特に実がつき始めたら朝必ず。",
+      "frostSensitive": true,
+      "heatSensitive": true
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "support-stake",
+        "required": false
+      },
+      {
+        "toolId": "tying-tape",
+        "required": false
+      },
+      {
+        "toolId": "insect-net",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "vegetable-chemical",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "radish",
+    "name": "ラディッシュ",
+    "nameKana": "らでぃっしゅ",
+    "emoji": "🌶",
+    "summary": "種まきから約30日で収穫できる、初心者の最初の成功体験に最適。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "autumn"],
+    "difficulty": "easy",
+    "requiredSpace": "pot",
+    "category": "root",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 3,
+          "startDay": 20,
+          "endMonth": 5,
+          "endDay": 31
+        },
+        {
+          "startMonth": 9,
+          "startDay": 1,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 3,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 31
+        },
+        {
+          "startMonth": 9,
+          "startDay": 1,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 4,
+          "startDay": 19,
+          "endMonth": 6,
+          "endDay": 30
+        },
+        {
+          "startMonth": 10,
+          "startDay": 1,
+          "endMonth": 11,
+          "endDay": 30
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 4,
+          "startDay": 3,
+          "endMonth": 6,
+          "endDay": 14
+        },
+        {
+          "startMonth": 9,
+          "startDay": 15,
+          "endMonth": 11,
+          "endDay": 14
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 3,
+          "startDay": 20,
+          "endMonth": 5,
+          "endDay": 31
+        },
+        {
+          "startMonth": 9,
+          "startDay": 1,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 3,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 21
+        },
+        {
+          "startMonth": 8,
+          "startDay": 22,
+          "endMonth": 10,
+          "endDay": 21
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 3,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 21
+        },
+        {
+          "startMonth": 8,
+          "startDay": 22,
+          "endMonth": 10,
+          "endDay": 21
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 2,
+          "startDay": 27,
+          "endMonth": 5,
+          "endDay": 10
+        },
+        {
+          "startMonth": 8,
+          "startDay": 11,
+          "endMonth": 10,
+          "endDay": 10
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "種まき",
+        "daysFromStart": 0,
+        "description": "1cm間隔ですじまきし、薄く覆土して水をやります。",
+        "why": "ラディッシュは発芽がそろいやすく、間隔が近すぎても後で間引きで調整できます。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "thin1",
+        "name": "1回目の間引き",
+        "daysFromStart": 7,
+        "description": "双葉がそろったら3cm間隔になるよう間引きます。",
+        "why": "間引かないと根が肥大できず、葉ばかり育ってしまいます。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "thin2",
+        "name": "2回目の間引き",
+        "daysFromStart": 14,
+        "description": "本葉が2〜3枚のとき、5〜6cm間隔に仕上げます。",
+        "why": "ここで間隔を確保することで、まん丸の実が揃います。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 30,
+        "description": "根元が2〜3cmに膨らんだら、葉の付け根を持って引き抜きます。",
+        "why": "遅れると割れたり辛味が強くなります。少しずつ採っていくのがコツです。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "直径2〜3cm",
+      "colorHint": "赤く色づき、土から肩が見えている",
+      "daysFromSowing": {
+        "early": 25,
+        "ready": 30,
+        "late": 45
+      },
+      "earlyCriteria": "まだ根元が細く、地表に肩が見えていない",
+      "readyCriteria": "地表から2〜3cmの赤い肩が見える",
+      "lateCriteria": "割れが入る、辛味が強くなる"
+    },
+    "rotationFamily": "アブラナ科",
+    "avoidAfter": ["アブラナ科"],
+    "recommendedNext": ["edamame", "mini-tomato", "cucumber"],
+    "weatherNotes": {
+      "wateringRule": "土が乾いたら表面が湿る程度に。やりすぎは割れの原因。",
+      "frostSensitive": false,
+      "heatSensitive": true
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "insect-net",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "organic-bokashi"
+      }
+    ]
+  },
+  {
+    "id": "spinach",
+    "name": "ほうれん草",
+    "nameKana": "ほうれんそう",
+    "emoji": "🥬",
+    "summary": "秋まきは甘みが増して、初心者でも失敗しにくい葉物。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["autumn", "winter"],
+    "difficulty": "easy",
+    "requiredSpace": "small",
+    "category": "leaf",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 9,
+          "startDay": 15,
+          "endMonth": 11,
+          "endDay": 10
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 9,
+          "startDay": 20,
+          "endMonth": 11,
+          "endDay": 15
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 10,
+          "startDay": 15,
+          "endMonth": 12,
+          "endDay": 10
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 9,
+          "startDay": 29,
+          "endMonth": 11,
+          "endDay": 24
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 9,
+          "startDay": 15,
+          "endMonth": 11,
+          "endDay": 10
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 9,
+          "startDay": 5,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 9,
+          "startDay": 5,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 8,
+          "startDay": 25,
+          "endMonth": 10,
+          "endDay": 20
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "soak",
+        "name": "種の吸水",
+        "daysFromStart": 0,
+        "description": "一晩水に浸けてから種まきします。",
+        "why": "ほうれん草の種は皮が硬く、吸水させると発芽がぐっと揃います。"
+      },
+      {
+        "id": "sow",
+        "name": "種まき",
+        "daysFromStart": 1,
+        "description": "1cm間隔ですじまきし、薄く覆土します。",
+        "why": "覆土が厚いと発芽が遅れるので、薄くやさしくが基本です。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "thin",
+        "name": "間引き",
+        "daysFromStart": 14,
+        "description": "本葉が2〜3枚で株間5cmに。",
+        "why": "込み合うと軟弱に育ち、べと病などの原因になります。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 28,
+        "description": "液肥か少量の化成肥料を軽く。",
+        "why": "葉色が薄く感じたらサイン。適量を守ると硝酸が残りにくく、味もよくなります。",
+        "fertilizers": [
+          {
+            "fertilizerId": "liquid-fertilizer"
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 45,
+        "description": "草丈20cm前後で株ごとハサミで刈り取ります。",
+        "why": "遅れると花芽が上がって苦みが出ます。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "草丈20〜25cm",
+      "colorHint": "濃い緑でハリがある",
+      "daysFromSowing": {
+        "early": 38,
+        "ready": 45,
+        "late": 60
+      },
+      "earlyCriteria": "まだ草丈が15cm以下",
+      "readyCriteria": "草丈20cm前後で葉が厚みを持つ",
+      "lateCriteria": "株元が木質化、花芽が立ち上がる"
+    },
+    "rotationFamily": "ヒユ科",
+    "avoidAfter": [],
+    "recommendedNext": ["mini-tomato", "radish", "edamame"],
+    "weatherNotes": {
+      "wateringRule": "発芽までは毎日、以後は乾いたら。",
+      "frostSensitive": false,
+      "heatSensitive": true,
+      "note": "寒さに当たると甘みが増します。"
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "row-cover",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "oil-cake"
+      }
+    ]
+  },
+  {
+    "id": "komatsuna",
+    "name": "小松菜",
+    "nameKana": "こまつな",
+    "emoji": "🌿",
+    "summary": "真夏以外ほぼ一年中作れ、種から30日ちょっとで収穫。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "autumn", "winter"],
+    "difficulty": "easy",
+    "requiredSpace": "pot",
+    "category": "leaf",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 3,
+          "startDay": 15,
+          "endMonth": 6,
+          "endDay": 15
+        },
+        {
+          "startMonth": 9,
+          "startDay": 1,
+          "endMonth": 11,
+          "endDay": 10
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 3,
+          "startDay": 10,
+          "endMonth": 6,
+          "endDay": 10
+        },
+        {
+          "startMonth": 9,
+          "startDay": 1,
+          "endMonth": 11,
+          "endDay": 15
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 4,
+          "startDay": 14,
+          "endMonth": 7,
+          "endDay": 15
+        },
+        {
+          "startMonth": 10,
+          "startDay": 1,
+          "endMonth": 12,
+          "endDay": 10
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 3,
+          "startDay": 29,
+          "endMonth": 6,
+          "endDay": 29
+        },
+        {
+          "startMonth": 9,
+          "startDay": 15,
+          "endMonth": 11,
+          "endDay": 24
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 3,
+          "startDay": 15,
+          "endMonth": 6,
+          "endDay": 15
+        },
+        {
+          "startMonth": 9,
+          "startDay": 1,
+          "endMonth": 11,
+          "endDay": 10
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 3,
+          "startDay": 5,
+          "endMonth": 6,
+          "endDay": 5
+        },
+        {
+          "startMonth": 8,
+          "startDay": 22,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 3,
+          "startDay": 5,
+          "endMonth": 6,
+          "endDay": 5
+        },
+        {
+          "startMonth": 8,
+          "startDay": 22,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 2,
+          "startDay": 22,
+          "endMonth": 5,
+          "endDay": 25
+        },
+        {
+          "startMonth": 8,
+          "startDay": 11,
+          "endMonth": 10,
+          "endDay": 20
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "種まき",
+        "daysFromStart": 0,
+        "description": "1cm間隔ですじまきし、薄く覆土します。",
+        "why": "密植気味にまいて、間引きで育てるのが失敗しにくいやり方です。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "thin",
+        "name": "間引き",
+        "daysFromStart": 10,
+        "description": "本葉2枚で株間3cm、4枚で株間5cmに。",
+        "why": "間引きで株元に風と光が入ることで、根がしっかり張ります。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 20,
+        "description": "2回目の間引き後に追肥します。",
+        "why": "短期作物ですが、この一回の追肥で葉の厚みがはっきり変わります。",
+        "fertilizers": [
+          {
+            "fertilizerId": "liquid-fertilizer"
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 35,
+        "description": "草丈20cm前後で株元から収穫します。",
+        "why": "とう立ち前の若いうちが、いちばん柔らかく甘みがあります。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "草丈20cm前後",
+      "colorHint": "濃い緑で葉の幅が広い",
+      "daysFromSowing": {
+        "early": 28,
+        "ready": 35,
+        "late": 50
+      },
+      "earlyCriteria": "まだ葉が小さく、葉数が少ない",
+      "readyCriteria": "草丈20cmで葉の色が濃い",
+      "lateCriteria": "葉が硬くなる、花茎が立ち上がる"
+    },
+    "rotationFamily": "アブラナ科",
+    "avoidAfter": ["アブラナ科"],
+    "recommendedNext": ["mini-tomato", "edamame", "cucumber"],
+    "weatherNotes": {
+      "wateringRule": "乾いたら表面がしっとりする程度に。",
+      "frostSensitive": false,
+      "heatSensitive": true
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "insect-net",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "organic-bokashi"
+      }
+    ]
+  },
+  {
+    "id": "edamame",
+    "name": "枝豆",
+    "nameKana": "えだまめ",
+    "emoji": "🫛",
+    "summary": "収穫直後のゆでたてが最高。育てた人だけが味わえる別格の甘さ。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "summer"],
+    "difficulty": "medium",
+    "requiredSpace": "small",
+    "category": "bean",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 6,
+          "endDay": 15
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 4,
+          "startDay": 20,
+          "endMonth": 6,
+          "endDay": 10
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 5,
+          "startDay": 25,
+          "endMonth": 7,
+          "endDay": 15
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 5,
+          "startDay": 9,
+          "endMonth": 6,
+          "endDay": 29
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 6,
+          "endDay": 15
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 6,
+          "endDay": 5
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 6,
+          "endDay": 5
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 4,
+          "startDay": 4,
+          "endMonth": 5,
+          "endDay": 25
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "種まき",
+        "daysFromStart": 0,
+        "description": "3粒ずつ点まきし、覆土して鳥害防止にネットを掛けます。",
+        "why": "発芽直後は鳥に食べられやすい時期です。最初の数日だけネットで守ります。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "thin",
+        "name": "間引き",
+        "daysFromStart": 14,
+        "description": "本葉2枚で元気な2本を残します。",
+        "why": "3本のままだと互いに光と養分を奪い合い、小粒のさやばかりになります。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "mound",
+        "name": "土寄せ",
+        "daysFromStart": 25,
+        "description": "株元に土を寄せます。",
+        "why": "側根を増やして倒伏を防ぎ、花つきがよくなります。",
+        "tools": ["trowel"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 30,
+        "description": "花が咲き始めたら少量の追肥。",
+        "why": "豆科は窒素を自分で作れるので、多肥はかえって逆効果。『少なめ・軽め』が基本です。",
+        "fertilizers": [
+          {
+            "fertilizerId": "vegetable-chemical"
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 80,
+        "description": "さやの8割が膨らんだら、株ごと抜いてさやを外します。",
+        "why": "タイミングが数日違うだけで甘みが変わります。ふっくらしてきたら早めの収穫を。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "さやの幅1cm以上",
+      "colorHint": "さやが鮮やかな緑でふっくら",
+      "daysFromSowing": {
+        "early": 70,
+        "ready": 80,
+        "late": 95
+      },
+      "earlyCriteria": "さやが平らで中の豆が小さい",
+      "readyCriteria": "さやの8割がふっくらしている",
+      "lateCriteria": "さやが黄色く変色、中の豆が硬くなる"
+    },
+    "rotationFamily": "マメ科",
+    "avoidAfter": ["マメ科"],
+    "recommendedNext": ["komatsuna", "spinach", "radish"],
+    "weatherNotes": {
+      "wateringRule": "花が咲いてさやが膨らむ時期は特にしっかり水を。",
+      "frostSensitive": true,
+      "heatSensitive": false
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "insect-net",
+        "required": false
+      },
+      {
+        "toolId": "support-stake",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "compost"
+      }
+    ]
+  },
+  {
+    "id": "tomato",
+    "name": "トマト",
+    "nameKana": "とまと",
+    "emoji": "🍅",
+    "summary": "完熟の味は格別。ミニトマトより少しだけ手間がかかる中級向け。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "summer"],
+    "difficulty": "medium",
+    "requiredSpace": "medium",
+    "category": "fruit",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 5,
+          "endDay": 25
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 20
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 5,
+          "startDay": 25,
+          "endMonth": 6,
+          "endDay": 24
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 5,
+          "startDay": 9,
+          "endMonth": 6,
+          "endDay": 8
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 5,
+          "endDay": 25
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 15
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 4,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 15
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 4,
+          "startDay": 4,
+          "endMonth": 5,
+          "endDay": 4
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "苗を植える",
+        "daysFromStart": 0,
+        "description": "株間50cmで植え、支柱を仮で立てて誘引します。",
+        "why": "大玉トマトは根を深く広く張ります。早めの支柱で傾きを防ぎます。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "prune",
+        "name": "わき芽かき",
+        "daysFromStart": 20,
+        "description": "主枝以外のわき芽をこまめに摘みます。",
+        "why": "1本仕立てにすることで、養分を主枝と花房に集中できます。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 35,
+        "description": "第1花房が膨らみ始めたら追肥を。",
+        "why": "この時期の栄養不足は尻腐れの原因になります。",
+        "fertilizers": [
+          {
+            "fertilizerId": "vegetable-chemical",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "pinch",
+        "name": "摘芯",
+        "daysFromStart": 60,
+        "description": "目標段数で主枝の先端を摘みます。",
+        "why": "エネルギーを実に回すための最後の仕上げです。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 80,
+        "description": "完全に赤くなってからヘタごと収穫します。",
+        "why": "完熟で採れるのは家庭菜園の特権。味の差が大きく出ます。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "直径6〜8cm",
+      "colorHint": "全体が深い赤",
+      "daysFromSowing": {
+        "early": 70,
+        "ready": 85,
+        "late": 110
+      },
+      "earlyCriteria": "まだ緑〜ピンク色",
+      "readyCriteria": "全体が深い赤で、持ったときにずっしり",
+      "lateCriteria": "割れる、表面が柔らかい"
+    },
+    "rotationFamily": "ナス科",
+    "avoidAfter": ["ナス科"],
+    "recommendedNext": ["komatsuna", "spinach", "radish"],
+    "weatherNotes": {
+      "wateringRule": "実がつき始めたら控えめに。乾かし気味が甘さを引き出します。",
+      "frostSensitive": true,
+      "heatSensitive": false,
+      "note": "雨よけがあるとさらに良い。"
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "support-stake",
+        "required": false
+      },
+      {
+        "toolId": "tying-tape",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "vegetable-chemical",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "piman",
+    "name": "ピーマン",
+    "nameKana": "ぴーまん",
+    "emoji": "🫑",
+    "summary": "夏中ずっと収穫が続く。日当たりさえ確保できれば失敗しにくい。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["spring", "summer"],
+    "difficulty": "easy",
+    "requiredSpace": "small",
+    "category": "fruit",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 5,
+          "startDay": 1,
+          "endMonth": 6,
+          "endDay": 5
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 4,
+          "startDay": 25,
+          "endMonth": 6,
+          "endDay": 1
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 5,
+          "startDay": 31,
+          "endMonth": 7,
+          "endDay": 5
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 5,
+          "startDay": 15,
+          "endMonth": 6,
+          "endDay": 19
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 5,
+          "startDay": 1,
+          "endMonth": 6,
+          "endDay": 5
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 4,
+          "startDay": 21,
+          "endMonth": 5,
+          "endDay": 26
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 4,
+          "startDay": 21,
+          "endMonth": 5,
+          "endDay": 26
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 4,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 15
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "苗を植える",
+        "daysFromStart": 0,
+        "description": "株間40cmで植え、仮支柱を添えて軽く誘引します。",
+        "why": "植えてすぐに支柱を添えると、風や水やりで苗が傾くのを防げます。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "support",
+        "name": "支柱立て",
+        "daysFromStart": 14,
+        "description": "本葉が増えてきたら本支柱を立てて主枝を結びます。",
+        "why": "ピーマンは枝が裂けやすいので、実がつく前に支えるのがコツです。",
+        "tools": ["support-stake", "tying-tape"]
+      },
+      {
+        "id": "prune",
+        "name": "一番花の下のわき芽かき",
+        "daysFromStart": 25,
+        "description": "一番花の下から出るわき芽を全て取り、上は3本仕立てに。",
+        "why": "養分を主枝に集中させると、最初の実が確実に育ちます。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 35,
+        "description": "2週に一度、株元から離して少量の肥料を。",
+        "why": "実が次々つく作物なので、追肥を絶やさないことが長期収穫の鍵です。",
+        "fertilizers": [
+          {
+            "fertilizerId": "vegetable-chemical",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 60,
+        "description": "長さ6〜7cmで色つやが出たらハサミで切り取ります。",
+        "why": "若どりすると株が疲れず、秋まで収穫が続きます。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "長さ6〜7cm",
+      "colorHint": "濃い緑でつやがある",
+      "daysFromSowing": {
+        "early": 55,
+        "ready": 65,
+        "late": 90
+      },
+      "earlyCriteria": "まだ小さく薄い緑",
+      "readyCriteria": "6〜7cm程度で表面につやが出てきた",
+      "lateCriteria": "実が大きくなりすぎ皮が硬くなる"
+    },
+    "rotationFamily": "ナス科",
+    "avoidAfter": ["ナス科"],
+    "recommendedNext": ["komatsuna", "spinach", "radish"],
+    "weatherNotes": {
+      "wateringRule": "乾燥に弱め。夏は朝にたっぷり。",
+      "frostSensitive": true,
+      "heatSensitive": false
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "support-stake",
+        "required": false
+      },
+      {
+        "toolId": "tying-tape",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "vegetable-chemical",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "okra",
+    "name": "オクラ",
+    "nameKana": "おくら",
+    "emoji": "🌶️",
+    "summary": "真夏にぐんぐん伸び、毎日収穫の楽しみがある南国野菜。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["summer"],
+    "difficulty": "easy",
+    "requiredSpace": "small",
+    "category": "fruit",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 5,
+          "startDay": 10,
+          "endMonth": 6,
+          "endDay": 20
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 5,
+          "startDay": 1,
+          "endMonth": 6,
+          "endDay": 15
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 6,
+          "startDay": 9,
+          "endMonth": 7,
+          "endDay": 20
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 5,
+          "startDay": 24,
+          "endMonth": 7,
+          "endDay": 4
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 5,
+          "startDay": 10,
+          "endMonth": 6,
+          "endDay": 20
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 4,
+          "startDay": 30,
+          "endMonth": 6,
+          "endDay": 10
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 4,
+          "startDay": 30,
+          "endMonth": 6,
+          "endDay": 10
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 4,
+          "startDay": 19,
+          "endMonth": 5,
+          "endDay": 30
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "soak",
+        "name": "種の吸水",
+        "daysFromStart": 0,
+        "description": "一晩水に浸けてから種まきします。",
+        "why": "オクラの種は皮が硬く、吸水で発芽がそろいやすくなります。"
+      },
+      {
+        "id": "sow",
+        "name": "種まき",
+        "daysFromStart": 1,
+        "description": "株間30cmで3粒ずつ点まきします。",
+        "why": "低温に弱いので、しっかり気温が上がってから播くのが鉄則です。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "thin",
+        "name": "間引き",
+        "daysFromStart": 14,
+        "description": "本葉2〜3枚で1か所2本に間引きます。",
+        "why": "少し残すことで生育がゆるやかになり、実が硬くなりにくくなります。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 35,
+        "description": "花が咲き始めたら2週ごとに追肥。",
+        "why": "オクラは肥料を切らすと実が硬くなりやすい作物です。",
+        "fertilizers": [
+          {
+            "fertilizerId": "vegetable-chemical",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 65,
+        "description": "長さ7cm前後で毎日チェックして収穫します。",
+        "why": "取り遅れると一気に硬くなって食べられなくなります。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "長さ7〜8cm",
+      "colorHint": "鮮やかな緑",
+      "daysFromSowing": {
+        "early": 55,
+        "ready": 65,
+        "late": 80
+      },
+      "earlyCriteria": "まだ小さく細い",
+      "readyCriteria": "7cm前後で角がはっきりしている",
+      "lateCriteria": "長さ10cm超で皮が硬くなる"
+    },
+    "rotationFamily": "アオイ科",
+    "avoidAfter": [],
+    "recommendedNext": ["komatsuna", "spinach", "radish"],
+    "weatherNotes": {
+      "wateringRule": "高温と乾燥には強いが、花の時期は水切れさせない。",
+      "frostSensitive": true,
+      "heatSensitive": false
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "support-stake",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "organic-bokashi",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "mizuna",
+    "name": "水菜",
+    "nameKana": "みずな",
+    "emoji": "🌱",
+    "summary": "株ごと収穫しても切って摘み収穫してもよい、京野菜の定番。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["autumn", "winter", "spring"],
+    "difficulty": "easy",
+    "requiredSpace": "pot",
+    "category": "leaf",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 3,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 20
+        },
+        {
+          "startMonth": 9,
+          "startDay": 5,
+          "endMonth": 11,
+          "endDay": 5
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 3,
+          "startDay": 10,
+          "endMonth": 5,
+          "endDay": 15
+        },
+        {
+          "startMonth": 9,
+          "startDay": 10,
+          "endMonth": 11,
+          "endDay": 10
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 4,
+          "startDay": 14,
+          "endMonth": 6,
+          "endDay": 19
+        },
+        {
+          "startMonth": 10,
+          "startDay": 5,
+          "endMonth": 12,
+          "endDay": 5
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 3,
+          "startDay": 29,
+          "endMonth": 6,
+          "endDay": 3
+        },
+        {
+          "startMonth": 9,
+          "startDay": 19,
+          "endMonth": 11,
+          "endDay": 19
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 3,
+          "startDay": 15,
+          "endMonth": 5,
+          "endDay": 20
+        },
+        {
+          "startMonth": 9,
+          "startDay": 5,
+          "endMonth": 11,
+          "endDay": 5
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 3,
+          "startDay": 5,
+          "endMonth": 5,
+          "endDay": 10
+        },
+        {
+          "startMonth": 8,
+          "startDay": 26,
+          "endMonth": 10,
+          "endDay": 26
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 3,
+          "startDay": 5,
+          "endMonth": 5,
+          "endDay": 10
+        },
+        {
+          "startMonth": 8,
+          "startDay": 26,
+          "endMonth": 10,
+          "endDay": 26
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 2,
+          "startDay": 22,
+          "endMonth": 4,
+          "endDay": 29
+        },
+        {
+          "startMonth": 8,
+          "startDay": 15,
+          "endMonth": 10,
+          "endDay": 15
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "種まき",
+        "daysFromStart": 0,
+        "description": "1cm間隔ですじまきし、薄く覆土します。",
+        "why": "密植気味にして間引きで形を整えるのが、水菜の標準的な作り方です。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "thin",
+        "name": "間引き",
+        "daysFromStart": 14,
+        "description": "本葉が2〜3枚で株間5cmに間引きます。",
+        "why": "間引きで風通しを確保すると、株元からきれいに葉が伸びます。",
+        "tools": ["pruning-scissors"]
+      },
+      {
+        "id": "feed",
+        "name": "追肥",
+        "daysFromStart": 25,
+        "description": "間引き後に少量の追肥を。",
+        "why": "葉物の追肥は控えめに。やりすぎは葉が硬くなる原因になります。",
+        "fertilizers": [
+          {
+            "fertilizerId": "liquid-fertilizer"
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 40,
+        "description": "株ごと抜くか、外葉から順に摘み取ります。",
+        "why": "若どりすると葉が柔らかく、生でも炒めても美味しく仕上がります。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "草丈25cm前後",
+      "colorHint": "緑が鮮やかでみずみずしい",
+      "daysFromSowing": {
+        "early": 30,
+        "ready": 40,
+        "late": 55
+      },
+      "earlyCriteria": "まだ草丈15cm以下",
+      "readyCriteria": "草丈20〜25cm、葉先がピンとしている",
+      "lateCriteria": "葉が硬くなり、株元が太く木質化する"
+    },
+    "rotationFamily": "アブラナ科",
+    "avoidAfter": ["アブラナ科"],
+    "recommendedNext": ["mini-tomato", "edamame", "cucumber"],
+    "weatherNotes": {
+      "wateringRule": "土が乾いたら表面が湿る程度に。",
+      "frostSensitive": false,
+      "heatSensitive": true,
+      "note": "寒さで甘みが増します。"
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "insect-net",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "organic-bokashi"
+      }
+    ]
+  },
+  {
+    "id": "strawberry",
+    "name": "いちご",
+    "nameKana": "いちご",
+    "emoji": "🍓",
+    "summary": "秋に植えて翌春に実る、家庭菜園の人気者。プランターでもOK。",
+    "regionAvailability": [
+      "hokkaido",
+      "tohoku",
+      "kanto",
+      "chubu",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu_okinawa"
+    ],
+    "seasons": ["autumn", "winter", "spring"],
+    "difficulty": "medium",
+    "requiredSpace": "small",
+    "category": "fruit",
+    "sowingWindows": {
+      "kanto": [
+        {
+          "startMonth": 10,
+          "startDay": 1,
+          "endMonth": 11,
+          "endDay": 10
+        }
+      ],
+      "kansai": [
+        {
+          "startMonth": 10,
+          "startDay": 5,
+          "endMonth": 11,
+          "endDay": 15
+        }
+      ],
+      "hokkaido": [
+        {
+          "startMonth": 10,
+          "startDay": 31,
+          "endMonth": 12,
+          "endDay": 10
+        }
+      ],
+      "tohoku": [
+        {
+          "startMonth": 10,
+          "startDay": 15,
+          "endMonth": 11,
+          "endDay": 24
+        }
+      ],
+      "chubu": [
+        {
+          "startMonth": 10,
+          "startDay": 1,
+          "endMonth": 11,
+          "endDay": 10
+        }
+      ],
+      "chugoku": [
+        {
+          "startMonth": 9,
+          "startDay": 21,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "shikoku": [
+        {
+          "startMonth": 9,
+          "startDay": 21,
+          "endMonth": 10,
+          "endDay": 31
+        }
+      ],
+      "kyushu_okinawa": [
+        {
+          "startMonth": 9,
+          "startDay": 10,
+          "endMonth": 10,
+          "endDay": 20
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "sow",
+        "name": "苗を植える",
+        "daysFromStart": 0,
+        "description": "クラウン（株元の太い部分）を埋めないよう浅植えに。",
+        "why": "クラウンを埋めると芽が出ずに腐ってしまいます。「土の上にちょこんと」が基本です。",
+        "tools": ["trowel", "potting-soil"]
+      },
+      {
+        "id": "mulch",
+        "name": "マルチ・防寒",
+        "daysFromStart": 30,
+        "description": "株元にわらや黒マルチを敷きます。",
+        "why": "冬の地温を保ち、春の実が泥はねで汚れるのも防げます。",
+        "tools": ["mulch-sheet"]
+      },
+      {
+        "id": "pollinate",
+        "name": "受粉のサポート",
+        "daysFromStart": 150,
+        "description": "花が咲いたら筆や指でやさしく中心をなでます。",
+        "why": "ベランダなど虫が来づらい環境では、人の手で助けると形のよい実になります。"
+      },
+      {
+        "id": "feed",
+        "name": "春の追肥",
+        "daysFromStart": 160,
+        "description": "花が咲き始めたら少量の追肥を。",
+        "why": "実が太る時期の栄養切れは、小粒や酸っぱさの原因になります。",
+        "fertilizers": [
+          {
+            "fertilizerId": "liquid-fertilizer",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "harvest",
+        "name": "収穫",
+        "daysFromStart": 180,
+        "description": "実全体が赤くなってからヘタごと摘みます。",
+        "why": "完熟で採れるのは家庭菜園の特権。香りと甘みが段違いです。",
+        "tools": ["pruning-scissors"]
+      }
+    ],
+    "harvestGuide": {
+      "sizeHint": "直径3〜4cm",
+      "colorHint": "実全体が深い赤",
+      "daysFromSowing": {
+        "early": 170,
+        "ready": 185,
+        "late": 210
+      },
+      "earlyCriteria": "ヘタの近くがまだ白い",
+      "readyCriteria": "実全体が赤く、香りが立つ",
+      "lateCriteria": "柔らかく傷みやすい"
+    },
+    "rotationFamily": "バラ科",
+    "avoidAfter": [],
+    "recommendedNext": ["mini-tomato", "edamame"],
+    "weatherNotes": {
+      "wateringRule": "冬は控えめ、春の生育期は朝にたっぷり。",
+      "frostSensitive": true,
+      "heatSensitive": true,
+      "note": "実が地面につくと傷むので、わらやマルチを敷きます。"
+    },
+    "starterTools": [
+      {
+        "toolId": "planter-10l",
+        "required": true
+      },
+      {
+        "toolId": "potting-soil",
+        "required": true
+      },
+      {
+        "toolId": "watering-can",
+        "required": true
+      },
+      {
+        "toolId": "trowel",
+        "required": true
+      },
+      {
+        "toolId": "mulch-sheet",
+        "required": false
+      },
+      {
+        "toolId": "pruning-scissors",
+        "required": false
+      }
+    ],
+    "starterFertilizers": [
+      {
+        "fertilizerId": "vegetable-chemical",
+        "required": true
+      }
+    ]
+  }
+]

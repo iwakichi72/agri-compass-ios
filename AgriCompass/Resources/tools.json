@@ -1,0 +1,98 @@
+[
+  {
+    "id": "planter-10l",
+    "name": "プランター(10L以上)",
+    "emoji": "🪴",
+    "category": "container",
+    "description": "深さ20cm以上で底に水抜き穴があるもの。トマトやナスなどの実もの野菜は10L以上が安心です。",
+    "buyHint": "100円ショップ・ホームセンターで入手可。"
+  },
+  {
+    "id": "potting-soil",
+    "name": "野菜用培養土",
+    "emoji": "🟫",
+    "category": "soil",
+    "description": "野菜用にブレンドされた培養土。pH調整・元肥入りタイプを選ぶと初心者でも失敗しにくいです。",
+    "buyHint": "ホームセンターで20Lほどあれば1〜2作分。"
+  },
+  {
+    "id": "watering-can",
+    "name": "ジョウロ",
+    "emoji": "🚿",
+    "category": "watering",
+    "description": "ハス口（シャワーノズル）が外せるタイプが万能。種まき直後はやさしく、苗が育ったら根元にたっぷり。",
+    "buyHint": "2L前後のものが扱いやすい。"
+  },
+  {
+    "id": "trowel",
+    "name": "移植ごて",
+    "emoji": "🪏",
+    "category": "soil",
+    "description": "苗を植える穴を掘ったり、土を慣らしたり。柄が金属一体型のものが長持ちします。",
+    "buyHint": "100円ショップでも十分に使えます。"
+  },
+  {
+    "id": "support-stake",
+    "name": "支柱(1.5m前後)",
+    "emoji": "🪵",
+    "category": "support",
+    "description": "実ものや背の高い葉物の倒伏防止に。プラ被覆鋼管が軽くて丈夫。",
+    "buyHint": "ホームセンターで1本100円程度。"
+  },
+  {
+    "id": "tying-tape",
+    "name": "麻ひも・8の字テープ",
+    "emoji": "🪢",
+    "category": "support",
+    "description": "茎を支柱に「8の字」でゆるく結ぶための紐。きつく結ぶと茎が傷みます。",
+    "buyHint": "100円ショップの麻ひもや園芸テープで代用可。"
+  },
+  {
+    "id": "pruning-scissors",
+    "name": "剪定ばさみ",
+    "emoji": "✂️",
+    "category": "cutting",
+    "description": "わき芽かき・収穫・古葉の整理に。指で千切ると病気が広がるので清潔なハサミで切るのが基本。",
+    "buyHint": "1000円前後の園芸ばさみが長く使えます。"
+  },
+  {
+    "id": "row-cover",
+    "name": "不織布カバー",
+    "emoji": "🧻",
+    "category": "cover",
+    "description": "発芽直後や寒さ・虫よけに、ふわっと被せて使う薄い布。光と水は通します。",
+    "buyHint": "ホームセンターで切り売り・ロールで購入できます。"
+  },
+  {
+    "id": "insect-net",
+    "name": "防虫ネット",
+    "emoji": "🪤",
+    "category": "cover",
+    "description": "葉物・アブラナ科の害虫対策に必須。1mm目以下のものを支柱で浮かせて被せます。",
+    "buyHint": "葉物を育てるなら最初に揃えたい一品。"
+  },
+  {
+    "id": "mulch-sheet",
+    "name": "黒マルチ",
+    "emoji": "🪪",
+    "category": "cover",
+    "description": "畝を覆う黒いシート。地温を上げ、雑草を抑え、土の跳ね返りで起きる病気も予防します。",
+    "buyHint": "プランター栽培ならワラやバークチップで代用可。"
+  },
+  {
+    "id": "frost-cloth",
+    "name": "霜よけシート",
+    "emoji": "❄️",
+    "category": "cover",
+    "description": "夜間の冷え込みから苗を守るシート。霜が予報された日の夕方に被せて朝に外します。",
+    "buyHint": "古い不織布や新聞紙でも代用可。"
+  },
+  {
+    "id": "shovel",
+    "name": "シャベル(小)",
+    "emoji": "🥄",
+    "category": "soil",
+    "description": "用土の袋から土をすくう・株元の土寄せに。家庭菜園は小さめが扱いやすいです。",
+    "buyHint": "移植ごてで兼用できる場合は不要。"
+  }
+]

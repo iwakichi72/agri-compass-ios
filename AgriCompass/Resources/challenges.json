@@ -1,0 +1,66 @@
+[
+  {
+    "id": "spring-three-crops",
+    "season": "spring",
+    "title": "春：3種類を同時に育ててみよう",
+    "description": "違う作物を同時に育てると、土の変化も気候の違いも体感で覚えられます。",
+    "goals": [{ "id": "active3", "label": "同時に育てている作物数", "target": 3 }],
+    "featuredMonths": [3, 4]
+  },
+  {
+    "id": "spring-fruit-trio",
+    "season": "spring",
+    "title": "春：実もの2品目に挑戦",
+    "description": "実もの野菜（トマト・ナス・ピーマンなど）を2種類育てて、夏の収穫を倍にしましょう。",
+    "goals": [{ "id": "fruit-active", "label": "育成中の実もの数", "target": 2 }],
+    "featuredMonths": [4, 5]
+  },
+  {
+    "id": "summer-tomato-marathon",
+    "season": "summer",
+    "title": "夏：トマトを収穫まで完走しよう",
+    "description": "夏の主役を最後まで見届ける体験を。",
+    "goals": [{ "id": "tomato-harvest", "label": "トマト類の収穫", "target": 1 }],
+    "featuredMonths": [7, 8]
+  },
+  {
+    "id": "summer-harvest-streak",
+    "season": "summer",
+    "title": "夏：3回の収穫を積み重ねよう",
+    "description": "夏は実が次々つく季節。複数回の収穫を経験しましょう。",
+    "goals": [{ "id": "harvest-total", "label": "今までの収穫回数", "target": 3 }],
+    "featuredMonths": [6, 7, 8]
+  },
+  {
+    "id": "autumn-leaf-trio",
+    "season": "autumn",
+    "title": "秋：葉物3種を育てよう",
+    "description": "秋は葉物の季節。虫が減って初心者にやさしい時期です。",
+    "goals": [{ "id": "leaf3", "label": "葉物作物の開始数", "target": 3 }],
+    "featuredMonths": [9, 10]
+  },
+  {
+    "id": "autumn-root-and-bean",
+    "season": "autumn",
+    "title": "秋：根もの＋豆類で土を育てよう",
+    "description": "ラディッシュなどの根ものと、枝豆など豆類の組み合わせは土に優しい組み合わせです。",
+    "goals": [{ "id": "root-or-bean-active", "label": "育成中の根もの＋豆類", "target": 2 }],
+    "featuredMonths": [10, 11]
+  },
+  {
+    "id": "winter-soil-prep",
+    "season": "winter",
+    "title": "冬：来春へ知識を貯めよう",
+    "description": "冬は栽培よりも次の春に向けた準備の季節。",
+    "goals": [{ "id": "why10", "label": "『なぜやるか』を読んだ数", "target": 10 }],
+    "featuredMonths": [12, 1]
+  },
+  {
+    "id": "winter-deep-knowledge",
+    "season": "winter",
+    "title": "冬：『なぜ』25回で職人へ",
+    "description": "ステップの理由を読み込むほど、来春の判断が早くなります。",
+    "goals": [{ "id": "why25", "label": "『なぜやるか』を読んだ数", "target": 25 }],
+    "featuredMonths": [1, 2]
+  }
+]

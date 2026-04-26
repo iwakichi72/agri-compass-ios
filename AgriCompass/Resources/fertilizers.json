@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vegetable-chemical",
+    "name": "野菜用化成肥料",
+    "emoji": "🧪",
+    "kind": "top-dress",
+    "nutrients": "mixed",
+    "description": "N・P・Kをバランスよく含む粒状の化学肥料。一握り程度を株元から少し離してまくのが基本です。",
+    "applyHint": "株元から5cm離して一握り、土に軽く混ぜる。",
+    "buyHint": "8-8-8など均等配合の小袋が初心者向け。"
+  },
+  {
+    "id": "organic-bokashi",
+    "name": "有機ぼかし肥料",
+    "emoji": "🌾",
+    "kind": "top-dress",
+    "nutrients": "mixed",
+    "description": "米ぬかや油かすを発酵させた有機肥料。じわじわ効くので追肥のリズムを乱しにくいです。",
+    "applyHint": "化成より気持ち多め(2握り)を月1ペースで。",
+    "buyHint": "ホームセンターの有機コーナーで入手可。"
+  },
+  {
+    "id": "liquid-fertilizer",
+    "name": "液体肥料",
+    "emoji": "💧",
+    "kind": "liquid",
+    "nutrients": "mixed",
+    "description": "水で薄めて与える即効性肥料。葉色が薄くなった時のリカバリーにも便利。",
+    "applyHint": "1000倍に薄めて週1〜2回、水やり代わりに。",
+    "buyHint": "原液500mlボトルが家庭菜園では万能。"
+  },
+  {
+    "id": "oil-cake",
+    "name": "油かす",
+    "emoji": "🫘",
+    "kind": "organic",
+    "nutrients": "N",
+    "description": "ナタネなどの絞りかすで作る窒素主体の有機肥料。葉物の元肥に向きます。",
+    "applyHint": "植え付け1〜2週間前に土に混ぜる。",
+    "buyHint": "発酵済みのものを選ぶと臭いが少ない。"
+  },
+  {
+    "id": "lime",
+    "name": "苦土石灰",
+    "emoji": "🪨",
+    "kind": "basal",
+    "nutrients": "mixed",
+    "description": "土の酸度を中和するアルカリ資材。マグネシウム補給も兼ねます。",
+    "applyHint": "植え付け2週間前に1m²あたり一握り(100g)ほどを土全体に混ぜる。",
+    "buyHint": "粒状の方が手が汚れにくい。"
+  },
+  {
+    "id": "compost",
+    "name": "堆肥",
+    "emoji": "🍂",
+    "kind": "basal",
+    "nutrients": "mixed",
+    "description": "落ち葉・牛ふんなどを発酵させた土壌改良材。土のフカフカ感を作ります。",
+    "applyHint": "植え付け2週間前に1m²あたり2〜3kgを混ぜ込む。",
+    "buyHint": "完熟タイプを選ぶと臭いが穏やか。"
+  }
+]
