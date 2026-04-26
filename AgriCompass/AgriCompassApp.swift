@@ -53,6 +53,15 @@ struct AgriCompassApp: App {
                 .tint(.appForest)
                 .onAppear {
                     userStore.touchOnLaunch(toast: toastCenter)
+                    let settings = userStore.profile.notificationSettings
+                    let region = userStore.profile.selectedRegion
+                    Task {
+                        let state = await NotificationScheduler.sync(settings: settings, region: region)
+                        await MainActor.run {
+                            userStore.profile.notificationSettings.permissionState = state
+                            userStore.saveProfile()
+                        }
+                    }
                 }
         }
         .modelContainer(modelContainer)
