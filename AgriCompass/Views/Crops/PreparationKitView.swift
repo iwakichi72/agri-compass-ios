@@ -226,6 +226,8 @@ struct OwnedToggle: View {
                         .foregroundStyle(.white)
                 }
             }
+            .frame(width: 44, height: 44)
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
     }

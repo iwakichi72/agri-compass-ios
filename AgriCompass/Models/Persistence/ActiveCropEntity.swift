@@ -6,6 +6,7 @@ final class ActiveCropEntity {
     @Attribute(.unique) var instanceId: String
     var cropId: String
     var plantedAt: Date
+    var scheduleAdjustmentDays: Int = 0
     var currentStepIndex: Int
     var completedStepIds: [String]
     var nickname: String?
@@ -15,6 +16,7 @@ final class ActiveCropEntity {
     init(instanceId: String = UUID().uuidString,
          cropId: String,
          plantedAt: Date = Date(),
+         scheduleAdjustmentDays: Int = 0,
          currentStepIndex: Int = 0,
          completedStepIds: [String] = [],
          nickname: String? = nil,
@@ -23,6 +25,7 @@ final class ActiveCropEntity {
         self.instanceId = instanceId
         self.cropId = cropId
         self.plantedAt = plantedAt
+        self.scheduleAdjustmentDays = scheduleAdjustmentDays
         self.currentStepIndex = currentStepIndex
         self.completedStepIds = completedStepIds
         self.nickname = nickname

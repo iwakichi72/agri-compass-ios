@@ -40,4 +40,23 @@ final class SelectorsTests: XCTestCase {
         XCTAssertEqual(tasks.count, 1)
         XCTAssertEqual(tasks.first?.cropId, crop.id)
     }
+
+    func testScheduleAdjustmentMovesTaskOutOfToday() {
+        guard let crop = catalog.crops.first(where: { $0.id == "mini-tomato" }) else {
+            return XCTFail("mini-tomato missing")
+        }
+        let now = DateUtils.startOfDay(Date())
+        let ac = ActiveCropEntity(cropId: crop.id, plantedAt: now, scheduleAdjustmentDays: 2)
+
+        let today = Selectors.todayTasks(activeCrops: [ac],
+                                         cropResolver: { catalog.crop(id: $0) },
+                                         now: now)
+        XCTAssertTrue(today.isEmpty)
+
+        let adjustedTarget = DateUtils.addDays(now, 2)
+        let weekly = Selectors.weeklyTasks(activeCrops: [ac],
+                                           cropResolver: { catalog.crop(id: $0) },
+                                           anchor: adjustedTarget)
+        XCTAssertEqual(weekly.map[adjustedTarget]?.first?.cropId, crop.id)
+    }
 }

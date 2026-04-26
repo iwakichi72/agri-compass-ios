@@ -21,10 +21,34 @@ enum DateUtils {
         calendar.date(byAdding: .day, value: days, to: d) ?? d
     }
 
+    static func addMonths(_ d: Date, _ months: Int) -> Date {
+        calendar.date(byAdding: .month, value: months, to: d) ?? d
+    }
+
+    static func startOfMonth(_ d: Date = Date()) -> Date {
+        let comps = calendar.dateComponents([.year, .month], from: d)
+        return calendar.date(from: comps).map(startOfDay) ?? startOfDay(d)
+    }
+
+    static func monthGridDates(_ d: Date = Date()) -> [Date] {
+        let start = startOfMonth(d)
+        let lastDay = addDays(addMonths(start, 1), -1)
+        let gridStart = startOfWeek(start)
+        let gridEnd = addDays(startOfWeek(lastDay), 6)
+        let count = diffDays(gridStart, gridEnd) + 1
+        return (0..<count).compactMap { calendar.date(byAdding: .day, value: $0, to: gridStart) }
+    }
+
     static func formatMD(_ d: Date) -> String {
         let m = calendar.component(.month, from: d)
         let day = calendar.component(.day, from: d)
         return "\(m)/\(day)"
+    }
+
+    static func formatYM(_ d: Date) -> String {
+        let y = calendar.component(.year, from: d)
+        let m = calendar.component(.month, from: d)
+        return "\(y)年\(m)月"
     }
 
     static func formatYMD(_ d: Date) -> String {
@@ -68,5 +92,11 @@ enum DateUtils {
 
     static func isSameDay(_ a: Date, _ b: Date) -> Bool {
         calendar.isDate(a, inSameDayAs: b)
+    }
+
+    static func isSameMonth(_ a: Date, _ b: Date) -> Bool {
+        let ac = calendar.dateComponents([.year, .month], from: a)
+        let bc = calendar.dateComponents([.year, .month], from: b)
+        return ac.year == bc.year && ac.month == bc.month
     }
 }

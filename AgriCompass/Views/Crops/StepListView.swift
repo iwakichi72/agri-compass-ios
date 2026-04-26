@@ -25,7 +25,7 @@ struct StepListView: View {
     private func stepCard(idx: Int, step: CropStep) -> some View {
         let done = instance.completedStepIds.contains(step.id)
         let current = idx == currentIndex
-        let targetDate = DateUtils.addDays(instance.plantedAt, step.daysFromStart)
+        let targetDate = Selectors.targetDate(ac: instance, step: step)
         let daysFromNow = DateUtils.diffDays(Date(), targetDate)
         let isHarvest = step.id == "harvest"
 
@@ -48,6 +48,13 @@ struct StepListView: View {
                             .font(.system(size: 12, weight: .semibold))
                             .foregroundStyle(Color.appForestDeep)
                     }
+                    if current && !done && daysFromNow < 0 && !isHarvest {
+                        RecoverySuggestionView(
+                            overdueDays: -daysFromNow,
+                            onComplete: { complete(stepId: step.id) },
+                            onPostpone: { postponeToTomorrow(targetDate: targetDate) }
+                        )
+                    }
                     Text(step.description)
                         .font(.system(size: 13))
                         .foregroundStyle(Color.appInkSoft)
@@ -57,9 +64,7 @@ struct StepListView: View {
                     if (current || done) && !isHarvest {
                         if !done {
                             Button("✓ \(step.name)を完了にする") {
-                                userStore.completeStep(instanceId: instance.instanceId, stepId: step.id)
-                                userStore.runAchievementChecks(catalog: catalog, toast: toastCenter)
-                                userStore.runChallengeChecks(catalog: catalog, toast: toastCenter)
+                                complete(stepId: step.id)
                             }
                             .buttonStyle(PrimaryButtonStyle())
                         } else {
@@ -85,6 +90,19 @@ struct StepListView: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .strokeBorder(current ? Color.appForest : Color.clear, lineWidth: 2)
         )
+    }
+
+    private func complete(stepId: String) {
+        userStore.completeStep(instanceId: instance.instanceId, stepId: stepId)
+        userStore.runAchievementChecks(catalog: catalog, toast: toastCenter)
+        userStore.runChallengeChecks(catalog: catalog, toast: toastCenter)
+    }
+
+    private func postponeToTomorrow(targetDate: Date) {
+        let tomorrow = DateUtils.startOfDay(DateUtils.addDays(Date(), 1))
+        let daysToShift = max(1, DateUtils.diffDays(targetDate, tomorrow))
+        userStore.shiftSchedule(instanceId: instance.instanceId, byDays: daysToShift)
+        toastCenter.push(message: "予定を明日にずらしました")
     }
 
     private func marker(index: Int, done: Bool, current: Bool) -> some View {
@@ -117,6 +135,59 @@ struct StepListView: View {
                 }
             }
         }
+    }
+}
+
+private struct RecoverySuggestionView: View {
+    let overdueDays: Int
+    let onComplete: () -> Void
+    let onPostpone: () -> Void
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(alignment: .top, spacing: 8) {
+                Image(systemName: "arrow.triangle.2.circlepath")
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundStyle(Color.appEarth)
+                    .padding(.top, 1)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("作業予定から\(overdueDays)日過ぎています")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundStyle(Color.appInk)
+                    Text(message)
+                        .font(.system(size: 11))
+                        .foregroundStyle(Color.appInkSoft)
+                }
+            }
+            HStack(spacing: 8) {
+                Button("今日やった") {
+                    onComplete()
+                }
+                .buttonStyle(SecondaryButtonStyle())
+
+                Button("明日に延期") {
+                    onPostpone()
+                }
+                .buttonStyle(GhostButtonStyle())
+            }
+        }
+        .padding(10)
+        .background(Color.appSunSoft.opacity(0.55),
+                    in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .strokeBorder(Color.appSun.opacity(0.45), lineWidth: 1)
+        )
+    }
+
+    private var message: String {
+        if overdueDays <= 2 {
+            return "今日できれば、そのまま進めて大丈夫です。難しければ明日にずらせます。"
+        }
+        if overdueDays <= 7 {
+            return "次の予定も少し後ろへずらすと、無理なく立て直せます。"
+        }
+        return "まず状態を見て、できそうなら今日実施。迷う時は明日にずらしましょう。"
     }
 }
 

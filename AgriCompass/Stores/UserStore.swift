@@ -82,6 +82,26 @@ final class UserStore {
         save()
     }
 
+    func updatePlantedAt(instanceId: String, plantedAt: Date) {
+        guard let ac = activeCrops.first(where: { $0.instanceId == instanceId }) else { return }
+        ac.plantedAt = DateUtils.startOfDay(plantedAt)
+        ac.scheduleAdjustmentDays = 0
+        save()
+    }
+
+    func shiftSchedule(instanceId: String, byDays days: Int) {
+        guard days != 0,
+              let ac = activeCrops.first(where: { $0.instanceId == instanceId }) else { return }
+        ac.scheduleAdjustmentDays += days
+        save()
+    }
+
+    func resetScheduleAdjustment(instanceId: String) {
+        guard let ac = activeCrops.first(where: { $0.instanceId == instanceId }) else { return }
+        ac.scheduleAdjustmentDays = 0
+        save()
+    }
+
     @discardableResult
     func markHarvested(instanceId: String, note: String? = nil) -> HarvestRecordEntity? {
         guard let ac = activeCrops.first(where: { $0.instanceId == instanceId }) else { return nil }

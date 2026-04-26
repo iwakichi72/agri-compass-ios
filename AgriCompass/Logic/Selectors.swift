@@ -53,7 +53,7 @@ enum Selectors {
                 i >= ac.currentStepIndex && !ac.completedStepIds.contains(s.id)
             }?.element
             guard let step = nextStep else { continue }
-            let target = DateUtils.startOfDay(DateUtils.addDays(ac.plantedAt, step.daysFromStart))
+            let target = targetDate(ac: ac, step: step)
             let daysUntil = DateUtils.diffDays(todayStart, target)
             if daysUntil <= 0 {
                 tasks.append(TodayTask(
@@ -76,11 +76,29 @@ enum Selectors {
                             cropResolver: (String) -> Crop?,
                             anchor: Date = Date()) -> (days: [Date], map: [Date: [TodayTask]]) {
         let days = DateUtils.weekDates(anchor)
+        return scheduledTasks(activeCrops: activeCrops, cropResolver: cropResolver, days: days)
+    }
+
+    static func monthlyTasks(activeCrops: [ActiveCropEntity],
+                             cropResolver: (String) -> Crop?,
+                             anchor: Date = Date()) -> (days: [Date], map: [Date: [TodayTask]]) {
+        let days = DateUtils.monthGridDates(anchor)
+        return scheduledTasks(activeCrops: activeCrops, cropResolver: cropResolver, days: days)
+    }
+
+    static func targetDate(ac: ActiveCropEntity, step: CropStep) -> Date {
+        DateUtils.startOfDay(DateUtils.addDays(ac.plantedAt, step.daysFromStart + ac.scheduleAdjustmentDays))
+    }
+
+    private static func scheduledTasks(activeCrops: [ActiveCropEntity],
+                                       cropResolver: (String) -> Crop?,
+                                       days: [Date]) -> (days: [Date], map: [Date: [TodayTask]]) {
         var map: [Date: [TodayTask]] = [:]
         for d in days { map[d] = [] }
 
-        let firstDay = days[0]
-        let lastDay = days[6]
+        guard let firstDay = days.first, let lastDay = days.last else {
+            return (days, map)
+        }
         let earliestOverdueAnchor = DateUtils.addDays(firstDay, -14)
 
         for ac in growingCrops(activeCrops) {
@@ -88,7 +106,7 @@ enum Selectors {
             for i in ac.currentStepIndex..<crop.steps.count {
                 let step = crop.steps[i]
                 if ac.completedStepIds.contains(step.id) { continue }
-                let target = DateUtils.startOfDay(DateUtils.addDays(ac.plantedAt, step.daysFromStart))
+                let target = targetDate(ac: ac, step: step)
                 if let matched = days.first(where: { DateUtils.isSameDay($0, target) }) {
                     map[matched]?.append(makeTask(ac: ac, crop: crop, step: step, overdueDays: 0))
                     break

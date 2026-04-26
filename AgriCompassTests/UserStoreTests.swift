@@ -45,4 +45,21 @@ final class UserStoreTests: XCTestCase {
         XCTAssertEqual(store.profile.stats.whyReadCount, 1)
         XCTAssertEqual(store.profile.stats.whyReadIds, ["mini-tomato-seed"])
     }
+
+    func testScheduleShiftCanBeResetByPlantingDateEdit() throws {
+        let fixture = try makeFixture()
+        let store = fixture.store
+        let plantedAt = DateUtils.startOfDay(DateUtils.addDays(Date(), -3))
+        let crop = store.addActiveCrop(cropId: "mini-tomato", plantedAt: plantedAt)
+
+        store.shiftSchedule(instanceId: crop.instanceId, byDays: 4)
+        XCTAssertEqual(store.activeCrops.first?.scheduleAdjustmentDays, 4)
+
+        let correctedPlantingDate = DateUtils.addDays(Date(), -1)
+        store.updatePlantedAt(instanceId: crop.instanceId, plantedAt: correctedPlantingDate)
+
+        let updated = try XCTUnwrap(store.activeCrops.first)
+        XCTAssertEqual(updated.scheduleAdjustmentDays, 0)
+        XCTAssertEqual(DateUtils.diffDays(updated.plantedAt, DateUtils.startOfDay(correctedPlantingDate)), 0)
+    }
 }
