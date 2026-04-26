@@ -1,9 +1,14 @@
 import SwiftUI
 
 struct OnboardingFlowView: View {
+    let onChooseFirstCrop: () -> Void
     @State private var step: Step = .welcome
 
     enum Step { case welcome, region, firstCrop }
+
+    init(onChooseFirstCrop: @escaping () -> Void = {}) {
+        self.onChooseFirstCrop = onChooseFirstCrop
+    }
 
     var body: some View {
         Group {
@@ -13,7 +18,7 @@ struct OnboardingFlowView: View {
             case .region:
                 RegionPickerView(onSelected: { step = .firstCrop })
             case .firstCrop:
-                FirstCropPromptView()
+                FirstCropPromptView(onChooseFirstCrop: onChooseFirstCrop)
             }
         }
         .background(Color.appCanvas.ignoresSafeArea())
@@ -133,7 +138,7 @@ struct RegionPickerView: View {
 
 struct FirstCropPromptView: View {
     @Environment(UserStore.self) private var userStore
-    @State private var showCropSelect = false
+    let onChooseFirstCrop: () -> Void
 
     var body: some View {
         VStack(spacing: 20) {
@@ -148,7 +153,7 @@ struct FirstCropPromptView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 20)
             Button("作物を選ぶ") {
-                userStore.completeOnboarding()
+                onChooseFirstCrop()
             }
             .buttonStyle(PrimaryButtonStyle(fillWidth: true))
             .padding(.horizontal, 20)
